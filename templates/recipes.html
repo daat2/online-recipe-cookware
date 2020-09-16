@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Recipe and Cookware</title>
+</head>
+<body>
+    {% for recipe in recipes %}
+        {{ recipe.category_name }}<br>
+        {{ recipe.recipe_name }}<br>
+        {{ recipe.cook_time}}<br>
+        {{ recipe.prep_time }}<br>
+        {{ recipe.servings }}<br>
+    {% endfor %}   
+</body>
+</html>
