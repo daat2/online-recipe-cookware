@@ -8,8 +8,14 @@
         {{ recipe.recipe_name }}<br>
         {{ recipe.cook_time}}<br>
         {{ recipe.prep_time }}<br>
-        {{ recipe.servings }}<br>
     {% endfor %}
+    
+    {% for cuisine in cuisines %}
+        {{ cuisine.cuisine_name }}
+    {% endfor %}
+
+
+
 
 {% endblock %}     
 

@@ -50,7 +50,7 @@
         <li><h4 class="centre-align orange-text text-darken-4">Daat Recipes</h4></li>
          <li><a href="{{ url_for('home') }}">Home</a></li>
          {% if session.user %}
-           <li><a href="recipe.html">Recipes</a></li>
+           <li><a href="recipe.html">Add recipes</a></li>
            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
            <li><a href="category.html">Category</a></li>
            <li><a href="cookware.html">Cookwares</a></li>
