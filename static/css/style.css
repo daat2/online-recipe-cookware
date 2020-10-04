@@ -45,9 +45,28 @@ height:100vh;
 margin:10px;
  text-align: center;
 }
+.btn-fb{
+
+    background:#e64a19;
+}
+
+.btn-tw{
+     background:#e64a19;
+
+}
 
 
+.btn-yt{
+     background:#e64a19;
 
-.btn{
-     orange;
+}
+
+.btn-ins{
+
+ background:#e64a19;
+}
+
+.btn-whatsapp{
+     background:#e64a19;
+
 }
