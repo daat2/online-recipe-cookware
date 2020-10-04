@@ -10,8 +10,10 @@
 <!-- Bootstrap core CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
+<!-- <link rel="stylesheet" type = "text/css" href="static/css/vendors/normalize.css"> 
+ <link rel="stylesheet" type = "text/css" href="static/css/vendors/grid.css"> -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" type="text/css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
@@ -24,6 +26,7 @@
 <header>
 <nav class ="nav-extended text-shadow deep-orange darken-2">
     <div class="nav-wrapper">
+    
       <a href="{{ url_for('home') }}"class="brand-logo">Daat Recipes</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
       <ul class="right hide-on-med-and-down">
@@ -43,6 +46,66 @@
       </ul>
     </div>
   </nav>
+  
+
+  <header class ="site-header">
+  <div class ="wrapper">
+  <h1> The real recipe </h1>
+  </header>
+<nav class="nav-secondary  deep-orange darken-2" aria-label="Secondary" itemscope="" itemtype="https://schema.org/SiteNavigationElement"><div class="wrap">
+<div itemscope>
+
+<!--Dropdown primary-->
+<div class="dropdown">
+
+  <!--Trigger-->
+  
+ <button type="button" class="btn btn- deep-orange darken-2 dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="false">Course Meal</button>
+
+  <!--Menu-->
+  <div class="dropdown-menu dropdown-primary">
+    <a class="dropdown-item" href="#">Starter</a>
+    <a class="dropdown-item" href="#">Main Dishes</a>
+    <a class="dropdown-item" href="#">Desert</a>
+    <a class="dropdown-item" href="#">Drinks</a>
+     <a class="dropdown-item" href="#">Coffee</a>
+
+  </div>
+
+
+  <button type="button" class="btn btn- deep-orange darken-2 dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="false">Cuisine</button>
+
+
+  <!--Menu-->
+  <div class="dropdown-menu dropdown-primary">
+    <a class="dropdown-item" href="#">African</a>
+    <a class="dropdown-item" href="#">Chinese</a>
+    <a class="dropdown-item" href="#">Asian</a>
+    <a class="dropdown-item" href="#">Italian</a>
+  </div>
+
+
+  <button type="button" class="btn btn- deep-orange darken-2 dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="false">Cookware</button>
+
+  <!--Menu-->
+  <div class="dropdown-menu dropdown-primary">
+    <a class="dropdown-item" href="#">Pan</a>
+    <a class="dropdown-item" href="#">Air Fryer</a>
+    <a class="dropdown-item" href="#">Casserole</a>
+    <a class="dropdown-item" href="#">Smoother</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+      
+</nav>
+
 
 
 <!--Mobile Navbar-->
@@ -61,8 +124,8 @@
         {% endif %}
   </ul>
           
-  </header>
-  <section>
+
+<section>
   <!--- Flash messages -->
 {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -73,8 +136,6 @@
                 {% endfor %}
             {% endif %}
         {% endwith %}
-
-
 
   </section>
 

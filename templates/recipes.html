@@ -1,9 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
-   <h2> testing my template </h2>
+<section>
+  
+        <!-- flash messages -->
+    {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </section>
+ 
+<div class="container">
+<hr class = "new">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
    
-    {% for recipe in recipes %}
+     <!-- {% for recipe in recipes %}<br>
         {{ recipe.category_name }}<br>
         {{ recipe.recipe_name }}<br>
         {{ recipe.cook_time}}<br>
@@ -12,7 +38,7 @@
     
     {% for cuisine in cuisines %}
         {{ cuisine.cuisine_name }}
-    {% endfor %}
+    {% endfor %} -->
 
 
 
