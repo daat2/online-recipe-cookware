@@ -41,6 +41,13 @@ height:100vh;
   border-radius: 5px;
 }
 
+nav#secondary-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .dropdown{
 margin:10px;
  text-align: center;

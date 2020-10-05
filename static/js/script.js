@@ -2,6 +2,6 @@ $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right"});
   });
 
-  $('.dropdown-toggle').dropdown()
+  $('.dropdown-toggle').dropdown();
 
  
