@@ -6,7 +6,7 @@
         <!-- flash messages -->
      {% with messages = get_flashed_messages(category_filter=['success']) %}
              {% if messages %}
-                {%for msg in messages%}
+                {%for message in messages%}
                    <div class="alert alert-success alert-dismissible mb-3" role="alert">
                         <span>{{msg}}</span>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -18,7 +18,7 @@
          {% endwith %}
          {% with messages = get_flashed_messages(category_filter=['error']) %}
              {% if messages %}
-                {%for msg in messages%}
+                {%for messages in messages%}
                    <div class="alert alert-danger alert-dismissible mb-3" role="alert">
                         <span>{{msg}}</span>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -29,47 +29,41 @@
               {% endif %}
          {% endwith %}
     </section>
- 
-<div class="container">
-<div class ="row">
 
- <div class="row">
-            {% for recipe in recipes%}
+<!-- card panels-->
+    
+<div style = "margin-top:10px">
 
-< <main class="container">
-
-<h4 class="text-center py-4">Three equal columns layout</h4>
-
-<!-- Grid row -->
-<div class="row">
-
-  <!-- Grid column -->
-  <div class="col-lg-4 col-md-12 mb-4">
-
-    <!--Card Primary-->
-    <div class="card mdb-color text-center z-depth-2">
-      <div class="card-body">
-        <h3 class="text-uppercase font-weight-bold cyan-text mt-2 mb-3"><strong>First column</strong></h3>
-        <p class="white-text mb-0">Ut enim ad minima veniam, quis nostrum exercita tionem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit
-          qui in ea voluptate non proident velit esse quam. </p>
-      </div>
-    </div>
-    <!--/.Card Primary-->
-
-  </div>
-  <!-- Grid column -->
-                    </div>  
-                </div> 
-            
-            </div> 
+<div class ="row ">
+{% for recipe in recipes%}
+<div class=" col-md-3 mt-4"> 
+    <div class="card h-100"> 
+    <div class="cardImage">
+     <img class= "card-img" src= "{{recipe.recipe_image}}" alt="Daat recipes"/> 
           </div>
+      
+    <div class="card-body">
+        <h4 class="card-title">
+        <p class="card-text">
+         {{recipe.description}}
+        
+      </p>
+         </div>
+      <div class="card-footer">
+       <a href="#" class="btn bg_cl">See Recipe</a>
+          </div> 
+        </div>  
+        </div>
+
+{% endfor %}
+
+            
+
 
              
-               {% endfor %} 
+               
 
 <!-- <hr class = "new"> -->
-</div>
 
 
 

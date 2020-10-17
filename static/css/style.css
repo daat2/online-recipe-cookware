@@ -27,19 +27,19 @@ html{
 }
 
 
-.header-inner {
+/* .header-inner {
 
 background-image: url("...../img/dinning.jpg");
 background-size: cover;
 background-position: center;
 height:100vh;
-}
+} */
 
 
-.new{
+/* .new{
  border: 10px solid green;
   border-radius: 5px;
-}
+} */
 
 nav#secondary-nav {
     display: flex;
@@ -55,6 +55,7 @@ margin:10px;
 .btn-fb{
 
     background:#e64a19;
+    
 }
 
 .btn-tw{
@@ -76,4 +77,27 @@ margin:10px;
 .btn-whatsapp{
      background:#e64a19;
 
+}
+.wrapper{
+    width:728px;
+    height:90px;
+}
+
+
+
+/* .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats)
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}  */
+
+
+    
 }
