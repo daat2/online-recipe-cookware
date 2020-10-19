@@ -112,6 +112,17 @@ def logout():
 
 
 
+@app.route("/get_recipe/<recipe_id>")
+def get_recipe(recipe_id):
+
+    the_recipe = mongo.db.recipe_collections.find_one(
+        {"_id": ObjectId(recipe_id)})
+    the_recipe_owner = mongo.db.recipe_owner.find()
+    return render_template("get_recipe.html", recipes=the_recipe, recipe_owner=the_recipe_owner)
+
+
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
