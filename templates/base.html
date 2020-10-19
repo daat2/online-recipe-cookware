@@ -26,13 +26,12 @@
 
 <nav class ="nav-extended text-shadow deep-orange darken-2">
     <div class="nav-wrapper">
-    
       <a href="{{ url_for('home') }}"class="brand-logo">Daat Recipes</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="{{ url_for('home') }}">Home</a></li>
         {% if session.user %}
-            <li><a href="recipe.html">Recipes</a></li>
+            <li><a href="{{ url_for('add_recipes') }}">New Recipe</a></li>
             <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a href="category.html">Category</a></li>
             <li><a href="cookware.html">Cookwares</a></li>
@@ -49,7 +48,8 @@
   
  <header class ="site-header">
   <div class ="wrapper">
-   <img src= "https://res.cloudinary.com/ib2/image/upload/v1602109448/logo_abwqjl.jpg" > <h6> The Real Recipe </h6>    </header>
+   <img src= "https://res.cloudinary.com/ib2/image/upload/v1602109448/logo_abwqjl.jpg" > <h6> The Real Recipe </h6> 
+     </header>
 <nav id="secondary-nav" class="nav-secondary  deep-orange darken-2" aria-label="Secondary">
 
 <!--Dropdown primary-->
@@ -68,7 +68,7 @@ aria-expanded="false">CourseMeal</button>
   </div>
 </div>
 
-<div class="dropdown">
+<div class="dropdown my-3">
   <button type="button" class="btn btn- deep-orange darken-2 dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="false">Cuisine</button>
   <!--Menu-->
@@ -87,9 +87,13 @@ aria-expanded="false">Cookware</button>
   <!--Menu-->
   <div class="dropdown-menu dropdown-primary">
     <a class="dropdown-item" href="#">Pan</a>
-    <a class="dropdown-item" href="#">Air Fryer</a>
+    <a class="dropdown-item" href="#">Stand Mixer</a>
     <a class="dropdown-item" href="#">Casserole</a>
-    <a class="dropdown-item" href="#">Smoother</a>
+    <a class="dropdown-item" href="#">Smoothies Maker</a>
+    <a class="dropdown-item" href="#">Coffee Maker</a>
+    <a class="dropdown-item" href="#">Baking Tray</a>
+
+
   </div>
 </div>
  </nav>
@@ -101,7 +105,7 @@ aria-expanded="false">Cookware</button>
         <li><h4 class="centre-align orange-text text-darken-4">Daat Recipes</h4></li>
          <li><a href="{{ url_for('home') }}">Home</a></li>
          {% if session.user %}
-           <li><a href="recipe.html">Add recipes</a></li>
+           <li><a href="{{ url_for('add_recipes') }}">New Recipe</a></li>
            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
            <li><a href="category.html">Category</a></li>
            <li><a href="cookware.html">Cookwares</a></li>
@@ -157,39 +161,39 @@ aria-expanded="false">Cookware</button>
 
         <!-- Grid column -->
         <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                <h6 class="mb-0">Get connected with us on social networks!!</h6>
+                 <h6 class="mb-0">Get connected with us on social networks!!</h6>
 
     <!--Facebook-->
     
-<button type="button" class="btn btn-fb" >
+<button type="button" class="btn btn-fb deep-orange darken-2" >
    <a target="_blank" href="https://en-gb.facebook.com "> <i class="fab fa-facebook-f pr-1"></i><a>
   <span>Facebook</span>
 </button>
   
 
 <!--Twitter-->
-<button type="button" class="btn btn-tw">
+<button type="button" class="btn btn-tw deep-orange darken-2">
   <i class="fab fa-twitter pr-1"></i>
   <span>Twitter</span>
 </button>
 
 
 <!--Youtube-->
-<button type="button" class="btn btn-yt">
+<button type="button" class="btn btn-yt deep-orange darken-2">
   <i class="fab fa-youtube pr-1"></i>
   <span>Youtube</span>
 </button>
 
 
 <!--Instagram-->
-<button type="button" class="btn btn-ins">
+<button type="button" class="btn btn-ins deep-orange darken-2">
   <i class="fab fa-instagram pr-1"></i>
   <span>Instagram</span>
 </button>
 
 
 <!--WhatsApp-->
-<button type="button" class="btn btn-whatsapp">
+<button type="button" class="btn btn-whatsapp deep-orange darken-2">
   <i class="fab btn-whatsapp pr-1"></i>
   <span>Whatsapp</span>
 </button>

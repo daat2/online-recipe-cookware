@@ -25,10 +25,11 @@ def home():
     return render_template("recipes.html", cuisines=cuisines, recipes=recipes)
 
 
-@app.route("/recipes/new")
+@app.route("/add_recipes")
 def add_recipes ():
-    return render_template("recipes.html")
- 
+    return render_template("add_recipes.html")
+
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -94,6 +95,12 @@ def profile(username):
         return render_template("profile.html", username=username)
 
     return redirect(url_for("login"))
+
+
+
+def edit_recipes ():
+    return render_template("edit_recipe.html")
+
 
 
 @app.route("/logout")

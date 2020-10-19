@@ -5,6 +5,7 @@ box-sizing: border-box;
 
 }
     
+
 html{
     text-rendering: optimizeLegibility;
 }
@@ -25,6 +26,17 @@ html{
     max-width: 1140px;
     margin: 0 auto;
 }
+
+
+ .nav-extended{  
+position:fixed;
+top:0;
+left:0;
+/* width: 100% */
+
+
+}
+
 
 
 /* .header-inner {
@@ -98,6 +110,3 @@ margin:10px;
   display: table;
 }  */
 
-
-    
-}
