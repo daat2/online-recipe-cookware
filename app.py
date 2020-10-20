@@ -26,8 +26,9 @@ def home():
 
 
 @app.route("/add_recipes")
-def add_recipes ():
-    return render_template("add_recipes.html")
+def add_recipes():
+    recipe = (mongo.db.recipes.find())
+    return render_template("add_recipes.html", recipe=recipe)
 
 
 
@@ -110,15 +111,6 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
-
-
-@app.route("/get_recipe/<recipe_id>")
-def get_recipe(recipe_id):
-
-    the_recipe = mongo.db.recipe_collections.find_one(
-        {"_id": ObjectId(recipe_id)})
-    the_recipe_owner = mongo.db.recipe_owner.find()
-    return render_template("get_recipe.html", recipes=the_recipe, recipe_owner=the_recipe_owner)
 
 
 

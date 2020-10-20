@@ -1,22 +1,63 @@
 {% extends "base.html" %}
 {% block content %}
 
-<ul class="collapsible">
-    <li>
-      <div class="collapsible-header white-text orange-text text-darken-4 text shadow"><i class="fas fa caret-down"></i>First</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header white-text orange-text text-darken-4 text shadow"><i class="fas fa caret-down"></i>Second</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header white-text orange-text text-darken-4 text shadow"><i class="fas fa caret-down"></i>Third</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-  </ul>
+  <div class="row  card-panel ">
+    <form class="col s12" method = "POST" action= "">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-utensils prefix deep-orange-text text-darken-2"></i>
+          <input id="recipe_name"  name = "recipe_name" type="text" class="validate">
+          <label for="recipe_name">Recipe Name</label>
+        </div>
+      </div>
+    
+      <div class="row" >    
+         <div class="input-field col s12">
+          <i class="fas fa-align-justify prefix deep-orange-text text-darken-2"></i>
+           <textarea id="recipe_description" name="recipe_description" minlength="6"
+             maxlength="200" class="materialize-textarea validate" required></textarea>
+          <label for="recipe_description">Recipe Description</label>
+        </div>
+      </div>
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="far fa-clock prefix deep-orange-text text-darken-2"></i>
+          <input id="cook_time"  name = "cook_time" type="text" class="validate">
+          <label for="cook_time">Cook Time</label>
+        </div>
+      </div>
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-utensil-spoon prefix deep-orange-text text-darken-2"></i>
+          <input id="recipe_name"  name = "recipe_name" type="text" class="validate">
+          <label for="recipe_name">Servings</label>
+          </div>
+      </div>
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-list prefix deep-orange-text text-darken-2"></i>
+          <input id="ingredients"  name = "ingredients" type="text" class="validate">
+          <label for="ingredients">Ingredients</label>
+          </div>
+      </div>
+       <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-list-ol prefix deep-orange-text text-darken-2"></i>
+          <input id="servings"  name = "servings" type="text" class="validate">
+          <label for="servings">Methods</label>
+          </div>
+      </div>
+    </form>
+  </div>
+        
 
-
-
-
+    
 {% endblock %}
