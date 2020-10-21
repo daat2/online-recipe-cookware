@@ -26,10 +26,9 @@ def home():
 
 
 @app.route("/add_recipes")
-def add_recipes():
-    recipe = (mongo.db.recipes.find())
-    return render_template("add_recipes.html", recipe=recipe)
-
+def add_recipes(): 
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("add_recipes.html",  categories=categories)
 
 
 @app.route("/register", methods=["GET", "POST"])
