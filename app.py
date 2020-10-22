@@ -25,8 +25,23 @@ def home():
     return render_template("recipes.html", cuisines=cuisines, recipes=recipes)
 
 
-@app.route("/add_recipes")
+@app.route("/add_recipes", methods=["GET","POST"])
 def add_recipes(): 
+    if  request.method == "POST":
+        recipe ={
+            "recipe_name": request.form.get("recipe_name"),
+            "category_name": request.form.get("category_name"),
+            "description_name": request.form.get("description_name"),
+            "cook_time": request.form.get("cook_time"),
+            "ingredients": request.form.get("ingredients"),
+            "methods": request.form.get("methods"),  
+            "created_by ": session["user"]                      
+          }
+          
+        mongo.db.recipes.insert_one(recipe)
+        flash("New Recipe Added")
+        return redirect (url_for("home"))
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_recipes.html",  categories=categories)
 
