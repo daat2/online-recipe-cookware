@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <div class="row card-panel">
+    <div class="row card-panel">
         <form class="col s12" method="POST" action="">
 			<div class="row">
 				<div class="input-field col s12">
@@ -9,28 +9,39 @@
                 <select id="category_name" name="category_name" class = "validate" required>
                     <option value="" disabled selected>Choose your Course Meal</option>
                 {% for category in categories %}
-                   <option value="{{ category.category_name }}"> {{ category.category_name }}</option>
+                <option value="{{ category.category_name }}"> {{ category.category_name }}</option>
                 {% endfor %}
               </select>
-    <label>Course Meal Category</label>
-  </div>
+        <label>Course Meal Category</label>
+    </div>
    </div>
-     <div class="row">
+   <!-- <div class="row">
+        <div class="input-field col s12">
+            <i class="fas fa-folder-open prefix prefix deep-orange-text text-darken-2"></i>
+        <select id="category_name" name="category_name" class = "validate" required>
+        <option value="" disabled selected>Choose your Cuisine</option>
+            {% for Cuisine in Cuisine %}
+             <option value="{{ Cuisine.cuisine_name }}"> {{ Cuisine.cuisine_name }}</option>
+            {% endfor %}
+              </select>
+        <label>Cuisine Category</label>
+    </div>
+   </div> -->
+    <div class="row">
         <div class="input-field col s12">
           <i class="fas fa-utensils prefix deep-orange-text text-darken-2"></i>
           <input id="recipe_name"  name = "recipe_name" type="text" class="validate">
           <label for="recipe_name">Recipe Name</label>
-        </div>
-      </div>
-    
-      <div class="row" >    
+    </div>
+    </div>
+        <div class="row" >    
          <div class="input-field col s12">
           <i class="fas fa-align-justify prefix deep-orange-text text-darken-2"></i>
            <textarea id="recipe_description" name="recipe_description" minlength="6"
              maxlength="200" class="materialize-textarea validate" required></textarea>
           <label for="recipe_description">Recipe Description</label>
-        </div>
-      </div>
+    </div>
+    </div>
       <div class="row">
     <form class="col s12">
       <div class="row">
