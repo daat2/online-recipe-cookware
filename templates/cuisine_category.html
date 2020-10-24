@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+ <h3 class=" deep-orange-text text-darken-2 center-align" >Manage Cuisine Category </h3>
+ <div class="row">
+ {% for category in categories %}
+    <div class="col s12 m3">
+      <div class="card deep-orange darken-2 text-shadow center-align">
+        <div class="card-content white-text">
+          <span class="card-title">{{ category.cuisine_name }}</span>
+          <i class="fas fa-utensils deep-orange darken-1" ></i>
+        </div>
+        <div class="card-action">
+          <a href="#" class= "btn btn-  yellow darken-4 ">Edit</a>
+          <a href="#" class= "btn btn-danger">Delete</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

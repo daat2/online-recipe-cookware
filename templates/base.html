@@ -33,7 +33,9 @@
         {% if session.user %}
             <li><a href="{{ url_for('add_recipes') }}">New Recipe</a></li>
             <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-            <li><a href="category.html">Category</a></li>
+            {% if session.user | lower == "admin" | lower %}    
+                <li><a href="{{ url_for('get_categories') }}">Cuisine Category</a></li>
+            {% endif %}    
             <li><a href="cookware.html">Cookwares</a></li>
             <li><a href="{{ url_for('logout') }}">Log Out</a></li>
 
@@ -104,10 +106,12 @@ aria-expanded="false">Cookware</button>
   <ul class="sidenav" id="mobile-demo">
         <li><h4 class="centre-align orange-text text-darken-4">Daat Recipes</h4></li>
          <li><a href="{{ url_for('home') }}">Home</a></li>
-         {% if session.user %}
+        {% if session.user %}
            <li><a href="{{ url_for('add_recipes') }}">New Recipe</a></li>
            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-           <li><a href="category.html">Category</a></li>
+           {% if session.user | lower == "admin" | lower %}
+               <li><a href="{{ url_for('get_categories') }}"> Cuisine Category</a></li>
+            {% endif %}
            <li><a href="cookware.html">Cookwares</a></li>
            <li><a href="{{ url_for('logout') }}">Log Out</a></li>
         {% else %}

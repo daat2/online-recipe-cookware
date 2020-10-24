@@ -117,6 +117,11 @@ def edit_recipes ():
     return render_template("edit_recipe.html")
 
 
+@app.route("/get_categories")
+def get_categories():
+    categories = list(mongo.db.cuisine.find().sort("cuisine_name", 1))
+    return render_template("cuisine_category.html", categories=categories)
+
 
 @app.route("/logout")
 def logout():
