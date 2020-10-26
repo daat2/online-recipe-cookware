@@ -3,14 +3,23 @@
 
 
  <h3 class=" deep-orange-text text-darken-2 center-align" >Manage Cuisine Category </h3>
- <div class="row">
- {% for category in categories %}
-    <div class="col s12 m3">
-      <div class="card deep-orange darken-2 text-shadow center-align">
-        <div class="card-content white-text">
-          <span class="card-title">{{ category.cuisine_name }}</span>
-          <i class="fas fa-utensils deep-orange darken-1" ></i>
+ 
+    <div class="row">
+         <div class="col s12 center-align">
+             <a href="{{ url_add_cuisine_category }}" class="btn-large deep-orange darken-2 text shadow">
+                Add Cuisine Category <i class = "fas fa-plus-square right"></i>
+            </a>
         </div>
+   </div>
+
+    <div class="row">
+        {% for category in categories %}
+            <div class="col s12 m3">
+                 <div class="card deep-orange darken-2 text-shadow center-align">
+                     <div class="card-content white-text">
+                          <span class="card-title">{{ category.cuisine_name }}</span>
+                            <i class="fas fa-utensils deep-orange darken-1" ></i>
+                        </div>
         <div class="card-action">
           <a href="#" class= "btn btn-  yellow darken-4 ">Edit</a>
           <a href="#" class= "btn btn-danger">Delete</a>

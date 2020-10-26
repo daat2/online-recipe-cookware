@@ -131,7 +131,17 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/add_cuisine_category", methods=["GET", "POST"])
+def add_cuisine_category():
+     if request.method == "POST":
+        category = {
+            "cuisine_name": request.form.get("cuisine_name")
+        }
+        mongo.db.categories.insert_one(category)
+        flash("New  Cuisine Category Added")
+        return redirect(url_for("get_categories"))
 
+     return render_template("add__cuisine_category.html")    
 
 
 if __name__ == "__main__":

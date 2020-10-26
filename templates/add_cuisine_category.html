@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+   <h3 class=" deep-orange-text text-darken-2 center-align" >Add Cuisine Category</h3>
+    
+    <div class="row card-panel">
+        <form class="col s12" method="POST" action="{{ url_for('add_cuisine_category') }}">
+     <!---Cuisine Name -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-folder-open prefix deep-orange-text text-darken-2"></i>
+                    <input id="cuisine_name"  name = "cuisine_name" minlength="2" maxlength="20"
+                        type="text" class="validate" required>
+                     <label for="cuisine">Cuisine Name</label>
+                </div>
+            </div>
+    <!-- submit button section--> 
+    <div class= "row">
+        <div class="col s12 center-align">
+          <button type="submit" class="btn btn-large deep-orange text darken-2">
+            Add Cuisine Category <i class="fa fa-plus-square right"></i>
+        </button>
+        </div>
+    </div>
+    </form>
+    </div>
+               
+{% endblock %}
