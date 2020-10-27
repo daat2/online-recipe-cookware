@@ -24,11 +24,12 @@
 <body>
 <!--Top Navbar-->
 
+
 <nav class ="nav-extended text-shadow deep-orange darken-2">
     <div class="nav-wrapper">
-      <a href="{{ url_for('home') }}"class="brand-logo">Daat Recipes</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
-      <ul class="right hide-on-med-and-down">
+        <a href="{{ url_for('home') }}"class="brand-logo"><img src= "https://res.cloudinary.com/ib2/image/upload/ar_1:1,c_fill,e_art:hokusai,g_auto,w_100/v1602109448/logo_abwqjl.jpg" > <h6> The Real Recipe </h6> </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+        <ul class="right hide-on-med-and-down">
         <li><a href="{{ url_for('home') }}">Home</a></li>
         {% if session.user %}
             <li><a href="{{ url_for('add_recipes') }}">New Recipe</a></li>
@@ -40,25 +41,39 @@
             <li><a href="{{ url_for('login') }}">Log In</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
         {% endif %}
-
-      </ul>
+        </ul>
     </div>
     </nav>
-  
- <header class ="site-header">
-  <div class ="wrapper">
-   <img src= "https://res.cloudinary.com/ib2/image/upload/v1602109448/logo_abwqjl.jpg" > <h6> The Real Recipe </h6> 
+   
+   <header class ="site-header">
+    
+     <div class="row card-panel grey lighten-5">
+        <form action="{{ url_for('search') }}" method="post" class="col s12">
+            <div class="row valign-wrapper center-align">
+                <div class="input-field col s12 m8">
+                     <i class="fas fa-search prefix deep-orange-text text-darken-4"></i>
+                    <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                    <label for="query">Find a recipe</label>
+                </div>
+                <div class="col s12 m4">
+                    <a href="{{ url_for('home') }}" class="red btn text-shadow">CLEAR</a>
+                    <button type="submit" class="deep-orange darken-2 btn text-shadow">
+                        <i class="fas fa-search left"></i> Search
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class ="wrapper">
+   <!-- <img src= "https://res.cloudinary.com/ib2/image/upload/ar_1:1,c_fill,e_art:hokusai,g_auto,w_100/v1602109448/logo_abwqjl.jpg" > <h6> The Real Recipe </h6>  -->
      </header>
 <nav id="secondary-nav" class="nav-secondary  deep-orange darken-2" aria-label="Secondary">
 
 <!--Dropdown primary-->
 <div class="dropdown">
-  
- <button type="button" class="btn btn- deep-orange darken-2 dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="false">CourseMeal</button>
-
-  <!--Menu-->
-  <div class="dropdown-menu dropdown-primary">
+  <button class="btn btn deep-orange darken-2 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">CourseMeal</button>
+<div class="dropdown-menu dropdown-deep-orange darken-2">
     <a class="dropdown-item" href="#">Starter</a>
     <a class="dropdown-item" href="#">Main Meal</a>
     <a class="dropdown-item" href="#">Desert</a>
@@ -66,12 +81,13 @@ aria-expanded="false">CourseMeal</button>
      <a class="dropdown-item" href="#">Coffee</a>
   </div>
 </div>
-
-<div class="dropdown my-3">
-  <button type="button" class="btn btn- deep-orange darken-2 dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="false">Cuisine</button>
+   
+ 
+<div class="dropdown ">
+  <button class="btn btn deep-orange darken-2 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">CUISINE</button>
   <!--Menu-->
-  <div class="dropdown-menu dropdown-primary">
+  <div class="dropdown-menu dropdown-deep-orange darken-2">
     <a class="dropdown-item" href="#">African</a>
     <a class="dropdown-item" href="#">Chinese</a>
     <a class="dropdown-item" href="#">British</a>
@@ -80,23 +96,23 @@ aria-expanded="false">Cuisine</button>
 </div>
 
  <div class="dropdown">
-  <button type="button" class="btn btn- deep-orange darken-2 dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="false">Cookware</button>
+  <button class="btn btn deep-orange darken-2 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">COOKWARE</button>
 
   <!--Menu-->
-  <div class="dropdown-menu dropdown-primary">
-    <a class="dropdown-item" href="#">Pan</a>
+  <div class="dropdown-menu dropdown -deep-orange darken-2">
+    <a class="dropdown-item " href="#">Pan</a>
     <a class="dropdown-item" href="#">Stand Mixer</a>
     <a class="dropdown-item" href="#">Casserole</a>
     <a class="dropdown-item" href="#">Smoothies Maker</a>
     <a class="dropdown-item" href="#">Coffee Maker</a>
     <a class="dropdown-item" href="#">Baking Tray</a>
-
+<div>
 
   </div>
 </div>
  </nav>
-</header>
+
 
 
 <!--Mobile Navbar-->

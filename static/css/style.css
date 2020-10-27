@@ -21,6 +21,8 @@ box-sizing: border-box;
 }
 
 
+
+
 .row{
 
     max-width: 1140px;
@@ -28,15 +30,18 @@ box-sizing: border-box;
 }
 
 
- .nav-extended{  
+ /* .nav-extended{  
 position:fixed;
 top:0;
-left:0;
+left:0; */
 /* width: 100% */
-
 
 }
 
+.nav-wrapper{
+    padding-bottom: 30px;
+
+}
 
 
 /* .header-inner {

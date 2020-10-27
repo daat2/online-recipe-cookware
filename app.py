@@ -24,6 +24,12 @@ def home():
     cuisines = mongo.db.cuisine.find()
     return render_template("recipes.html", cuisines=cuisines, recipes=recipes)
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
+    return render_template("recipes.html", recipes=recipes)
+
 
 @app.route("/add_recipes", methods=["GET","POST"])
 def add_recipes(): 
