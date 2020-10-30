@@ -1,12 +1,6 @@
-{% extends "base.html" %}
+{% extends 'base.html' %} 
 {% block content %}
-<section>
-        <!-- flash messages -->
-    {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-    </section>
+
+                    <div> recipe.recipe_name</div>
+            
+{% endblock %}

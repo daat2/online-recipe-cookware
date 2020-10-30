@@ -1,29 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <div class="container">
+      <h1 class="display-3 textcenter">Shop for cooking tools<h1>
+        <div id="withControls" class="carouse slide" data-ride="carouse" data-interval ="1000">
+        <div class="carouse-inner" active>
+            <div class="carouse-item">
+                <img src="static/img/orange_pan.jpg" class="d-block w-100" alt="">
+            </div>
+        <div class="carouse-item">
+            <img src="static/img/silver_pan.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carouse-item">
+            <img src="static/img/pink_pan.jpg" class="d-block w-100" alt="">
+        </div>
+    </div>
+    </div> 
+    <a href="#withControls" class="carouse-control-prev" data-slide="prev">
+    <span class="carouse-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">previuos</span>
+    </a>
+    <a href="#withControls" class="carouse-control-next" data-slide="next">
+    <span class="carouse-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">next</span>
+    </a>
+    </div>      
+[[</div>
 
-<div class= "container mt-5">
-<div class = "row">
-<div class ="col-lg-7 mb-3">
-<div id ="mainCarousel" class ="carousel slide" data-ride= "carousel">
-<div class = "carousel - inner">
-<div class ="carousel-item active">
-.<img src = "images/slider" alt="" class = "d-block-w-100">
-</div>
-</div>
-<a href="mainCarousel" class ="carousel-control-prev" data-slide="prev" role ="button"></a>
-<span class = "carousel-control-prev-icon" aria-hidden="true"></span>
-<span class = "sr-only">previous</span>
-</a>
-<a href="mainCarousel" class ="carousel-control-next" data-slide="next" role ="button"></a>
-<span class = "carousel-control-next-icon" aria-hidden="true"></span>
-<span class = "sr-only">next</span>
-</a>
-</div>
-<div>
 
-<div class ="col-lg-5">
-<h3> Browse our cooking tools</h3>  
-<p  class = "lead">  see 
 
 {% endblock %}

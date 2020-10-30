@@ -27,7 +27,7 @@
 
 <nav class ="nav-extended text-shadow deep-orange darken-2">
     <div class="nav-wrapper">
-        <a href="{{ url_for('home') }}"class="brand-logo"><img src= "https://res.cloudinary.com/ib2/image/upload/ar_1:1,c_fill,e_art:hokusai,g_auto,w_100/v1602109448/logo_abwqjl.jpg" > <h6> The Real Recipe </h6> </a>
+        <a href="{{ url_for('home') }}"class="brand-logo"><img src= "https://res.cloudinary.com/ib2/image/upload/ar_1:1,c_fill,e_art:hokusai,g_auto,w_100/v1602109448/logo_abwqjl.jpg" ></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
         <ul class="right hide-on-med-and-down">
         <li><a href="{{ url_for('home') }}">Home</a></li>
@@ -35,7 +35,7 @@
             <li><a href="{{ url_for('add_recipes') }}">New Recipe</a></li>
             <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a href="{{ url_for('get_categories') }}">Cuisine Category</a></li>
-            <li><a href="cookware.html">Cookwares</a></li>
+            <li><a href="{{ url_for('cookware') }}">Cookwares</a></li>
             <li><a href="{{ url_for('logout') }}">Log Out</a></li>
         {% else %}
             <li><a href="{{ url_for('login') }}">Log In</a></li>
@@ -47,7 +47,7 @@
    
    <header class ="site-header">
     
-     <div class="row card-panel grey lighten-5">
+     <div class="row card-panel ">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
                 <div class="input-field col s12 m8">
@@ -73,25 +73,21 @@
 <div class="dropdown">
   <button class="btn btn deep-orange darken-2 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
     aria-haspopup="true" aria-expanded="false">CourseMeal</button>
-<div class="dropdown-menu dropdown-deep-orange darken-2">
-    <a class="dropdown-item" href="#">Starter</a>
-    <a class="dropdown-item" href="#">Main Meal</a>
-    <a class="dropdown-item" href="#">Desert</a>
-    <a class="dropdown-item" href="#">Drinks</a>
-     <a class="dropdown-item" href="#">Coffee</a>
-  </div>
+    <div class="dropdown-menu dropdown-deep-orange darken-2">
+        {% for category in categories %}
+            <a class="dropdown-item" href="{{ url_for('get_recipes_by_category', category=category['category_name']) }}">{{category.category_name}}</a>
+        {% endfor %}
+    </div>
 </div>
    
  
 <div class="dropdown ">
   <button class="btn btn deep-orange darken-2 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
     aria-haspopup="true" aria-expanded="false">CUISINE</button>
-  <!--Menu-->
-  <div class="dropdown-menu dropdown-deep-orange darken-2">
-    <a class="dropdown-item" href="#">African</a>
-    <a class="dropdown-item" href="#">Chinese</a>
-    <a class="dropdown-item" href="#">British</a>
-    <a class="dropdown-item" href="#">Italian</a>
+    <div class="dropdown-menu dropdown-deep-orange darken-2">
+        {% for cuisine in cuisine %}
+            <a class="dropdown-item" href="{{ url_for('get_recipes_by_cuisine',cuisine=cuisine['cuisine_name']) }}">{{cuisine.cuisine_name}}</a>
+        {% endfor %}
   </div>
 </div>
 
@@ -123,7 +119,7 @@
            <li><a href="{{ url_for('add_recipes') }}">New Recipe</a></li>
            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
            <li><a href="{{ url_for('get_categories') }}"> Cuisine Category</a></li>
-            <li><a href="cookware.html">Cookwares</a></li>
+            <li><a href="{{ url_for('cookware') }}">Cookwares</a></li>
            <li><a href="{{ url_for('logout') }}">Log Out</a></li>
         {% else %}
            <li><a href="{{ url_for('login') }}">Log In</a></li>

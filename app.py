@@ -22,7 +22,24 @@ def home():
     # import pdb; pdb.set_trace()
     recipes = mongo.db.recipes.find()
     cuisines = mongo.db.cuisine.find()
-    return render_template("recipes.html", cuisines=cuisines, recipes=recipes)
+    categories = mongo.db.categories.find()
+    return render_template("recipes.html", cuisines=cuisines, categories=categories, recipes=recipes)
+
+
+@app.route("/category/<category>")
+def get_recipes_by_category(category):
+    recipes = mongo.db.recipes.find({'category_name': category})
+    cuisines = mongo.db.cuisine.find()
+    categories = mongo.db.categories.find()
+    return render_template("recipes.html", cuisines=cuisines, categories=categories, recipes=recipes)
+
+
+@app.route("/recipe/<recipe_id>")
+def get_recipe_detail(recipe_id):
+    # breakpoint()
+    recipe = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
+    return render_template("check_recipe.html", recipe=recipe)
+
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
@@ -122,6 +139,9 @@ def profile(username):
 def edit_recipes ():
     return render_template("edit_recipe.html")
 
+def check_recipe():
+    return render_template("check_recipe.html")    
+
 
 @app.route("/get_categories")
 def get_categories():
@@ -147,7 +167,11 @@ def add_cuisine_category():
         flash("New  Cuisine Category Added")
         return redirect(url_for("get_categories"))
 
-     return render_template("add__cuisine_category.html")    
+     return render_template("add__cuisine_category.html")   
+
+@app.route("/cookware")
+def cookware():
+    return render_template("cookware.html")     
 
 
 if __name__ == "__main__":

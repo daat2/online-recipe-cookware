@@ -40,17 +40,23 @@
     <div class="card h-100"> 
     <div class="cardImage">
      <img class= "card-img" src= "{{recipe.recipe_image}}" alt="Daat recipes"/> 
-          </div>
+     <a href="#" class="button"> <span class="icon icon-play"></span></a>
+</div>
       
     <div class="card-body">
         <h5 class="card-name">
-        <a href ="#"> {{recipe.recipe_name}} </a>
-        <h5>
-          
-         </div>
+        <a href ="#"> {{recipe.recipe_name}} </a></h5>
+        <h6><a href="#"> {{recipe.category_name}} </a></h6>
+        <ul>
+        <li><span class="icon icon-users"> {{ recipe.servings }}</span>&nbspservings<span></li>
+        <li><span class="icon icon-clock">{{ recipe.cook_time }}</span><span></li>
+        </ul>	   
+        </div> 
+
+         <p> {{ recipe.recipe_description }}</p>
          
       <div class="card-footer">
-       <a href="#" class="btn btn-deep-orange darken-2">GET Recipe </a>
+       <a href="{{url_for('get_recipe_detail', recipe_id=recipe._id) }}" class="btn btn-deep-orange darken-2">GET Recipe </a>
           </div> 
         </div>  
         </div>
