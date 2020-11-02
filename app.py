@@ -23,7 +23,8 @@ def home():
     recipes = mongo.db.recipes.find()
     cuisines = mongo.db.cuisine.find()
     categories = mongo.db.categories.find()
-    return render_template("recipes.html", cuisines=cuisines, categories=categories, recipes=recipes)
+    return render_template("recipes.html", cuisines=cuisines, categories=categories,
+        recipes=recipes)
 
 
 @app.route("/category/<category>")
