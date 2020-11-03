@@ -23,8 +23,8 @@ def home():
     recipes = mongo.db.recipes.find()
     cuisines = mongo.db.cuisine.find()
     categories = mongo.db.categories.find()
-    return render_template("recipes.html", cuisines=cuisines, categories=categories,
-        recipes=recipes)
+    return render_template("recipes.html", cuisines=cuisines, 
+    categories=categories,  recipes=recipes)
 
 
 @app.route("/category/<category>")
@@ -37,8 +37,7 @@ def get_recipes_by_category(category):
 
 @app.route("/recipe/<recipe_id>")
 def get_recipe_detail(recipe_id):
-    # breakpoint()
-    recipe = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
+    recipe = mongo.db.recipe_collections.find_one({ "_id": ObjectId(recipe_id)})
     return render_template("check_recipe.html", recipe=recipe)
 
 

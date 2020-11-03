@@ -1,6 +1,37 @@
 {% extends 'base.html' %} 
 {% block content %}
 
-                    <div> recipe.recipe_name</div>
+
+  <div class='recipe-card'>
+  <div class="">
+  <img src="https://res.cloudinary.com/ib2/image/upload/bo_22px_solid_rgb:000,c_scale,h_600,w_600/v1602067973/Starters/Garlic-Bread-LEAD-1_g1zpcl.jpg" alt= "img" class="center"></div>
+  <div class="recipe-card__body">
+    <h4 class="recipe-card__heading">Garlic Bread</h4>
+       
+    <ul class="recipe-card__nav">
+      <li>
+        <h3 class="active">Ingredients</h3>
+        <p>{{recipe.ingredients }} </p>
+
+        
+       <h3>Methods</h3>
+       <p>{{ recipe.methods }} </p>
+
+        
+    
+    
+    
+    </div>
+  
+    </div>
+    
+    
+   
+
+
+    
+  
+  
+
             
 {% endblock %}

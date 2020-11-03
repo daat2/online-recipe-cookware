@@ -116,3 +116,63 @@ margin:10px;
   display: table;
 }  */
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.recipe-card__ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  column-count: 1;
+  li {
+    margin-bottom: 5px;
+  }
+  li:before {
+    content: '\2022';
+    color: #eb9376;
+    margin-right: 5px;
+  }
+}
+
+.recipe-card__nav {
+  margin: 0 0 20px;
+  padding: 0;
+  border-bottom: 1px solid #eb9376;
+  li {
+    display: inline-block;
+    margin-right: 30px
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  h3:after {
+    content: '';
+    display: block;
+    width: 0%;
+    padding-top: 10px;
+    margin: 0 auto;
+    border-bottom: 5px solid #eb9376;
+    transition: width 250ms ease-in-out 0s;
+  }
+  h3:hover {
+    cursor: pointer;
+  }
+  h3:hover:after, h3.active:after {
+   width: 100%; 
+  }
+}
+
+@media (min-width:599px) {
+  .recipe-card {
+    width: 600px
+  }
+  .recipe-card__ingredients {
+    column-count: 2
+  }
+}
