@@ -85,8 +85,8 @@
   <button class="btn btn deep-orange darken-2 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
     aria-haspopup="true" aria-expanded="false">CUISINE</button>
     <div class="dropdown-menu dropdown-deep-orange darken-2">
-        {% for category in categories %}
-            <a class="dropdown-item" href="{{ url_for('get_recipes_by_category',category=category['cuisine_name']) }}">{{category.cuisine_name}}</a>
+        {% for cuisine in cuisines %}
+            <a class="dropdown-item" href="{{ url_for('get_recipes_by_cuisine',cuisine=cuisine['cuisine_name']) }}">{{cuisine.cuisine_name}}</a>
         {% endfor %}
   </div>
 </div>
@@ -175,12 +175,12 @@
                  <h6 class="mb-0">Get connected with us on social networks!!</h6>
 
     <!--Facebook-->
-    
+<a target="_blank" href="https://en-gb.facebook.com ">
 <button type="button" class="btn btn-fb deep-orange darken-2" >
-   <a target="_blank" href="https://en-gb.facebook.com "> <i class="fab fa-facebook-f pr-1"></i><a>
+ <i class="fab fa-facebook-f pr-1"></i>
   <span>Facebook</span>
 </button>
-  
+  </a>
 
 <!--Twitter-->
 <button type="button" class="btn btn-tw deep-orange darken-2">

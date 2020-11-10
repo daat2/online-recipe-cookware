@@ -21,10 +21,10 @@ mongo = PyMongo(app)
 def home():
     # import pdb; pdb.set_trace()
     recipes = mongo.db.recipes.find()
-    cuisines = mongo.db.cuisine.find()
-    categories = mongo.db.categories.find()
-    return render_template("recipes.html", cuisines=cuisines, 
-    categories=categories,  recipes=recipes)
+    cuisines_records = mongo.db.cuisine.find()
+    categories_records = mongo.db.categories.find()
+    return render_template("recipes.html", cuisines=cuisines_records, 
+    categories=categories_records,  recipes=recipes)
 
 
 @app.route("/category/<category>")
@@ -34,6 +34,17 @@ def get_recipes_by_category(category):
     categories = mongo.db.categories.find()
     return render_template("recipes.html", cuisines=cuisines, categories=categories, recipes=recipes)
 
+
+@app.route("/cuisine/<cuisine>")
+def get_recipes_by_cuisine(cuisine):
+    recipes = mongo.db.recipes.find({'cuisine_name': cuisine})
+    cuisines = mongo.db.cuisine.find()
+    categories = mongo.db.categories.find()
+    return render_template("recipes.html", cuisines=cuisines, categories=categories, recipes=recipes)
+
+def test(students):
+    for child in students:
+        print(child)
 
 @app.route("/recipe/<recipe_id>")
 def get_recipe_detail(recipe_id):
