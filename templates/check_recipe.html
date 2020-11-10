@@ -1,36 +1,23 @@
 {% extends 'base.html' %} 
 {% block content %}
 
-
-  <div class='recipe-card'>
-  <div class="">
-  <img src="https://res.cloudinary.com/ib2/image/upload/bo_22px_solid_rgb:000,c_scale,h_600,w_600/v1602067973/Starters/Garlic-Bread-LEAD-1_g1zpcl.jpg" alt= "img" class="center"></div>
-  <div class="recipe-card__body">
-    <h4 class="recipe-card__heading">Garlic Bread</h4>
-       
+    <div class="recipe-card">
+    <img class= "card-img" src= "{{recipe.detail_img}}" alt="Daat recipes"/> 
+    <!-- <img class= "card-img" src="https://res.cloudinary.com/ib2/image/upload/bo_22px_solid_rgb:000,c_scale,h_600,w_600/v1602067973/Starters/Garlic-Bread-LEAD-1_g1zpcl.jpg" alt="image"> -->
+    </div>
+    <div class="recipe-card-body">
+    <!-- <h5 class="recipe-heading">Garlic Bread </h5> -->
+    <div class="#"> <p><strong>{{recipe.recipe_name}}</strong></p></h5>
+    <h3 class="active">Ingredients</h3>
+    <div class ="#"><p>  {{ recipe.ingredients | safe }}</p><br>
     <ul class="recipe-card__nav">
-      <li>
-        <h3 class="active">Ingredients</h3>
-        <p>{{recipe.ingredients }} </p>
-
+    <h3 class="active">Methods</h3>
+    </ul>
+    <p> {{ recipe.methods | safe }} </p>
+    
         
-       <h3>Methods</h3>
-       <p>{{ recipe.methods }} </p>
-
-        
-    
-    
-    
+           
     </div>
-  
-    </div>
-    
-    
-   
-
-
-    
-  
   
 
             

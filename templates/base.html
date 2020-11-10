@@ -85,8 +85,8 @@
   <button class="btn btn deep-orange darken-2 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
     aria-haspopup="true" aria-expanded="false">CUISINE</button>
     <div class="dropdown-menu dropdown-deep-orange darken-2">
-        {% for categories in categories %}
-            <a class="dropdown-item" href="{{ url_for('get_recipes_by_cuisines',category=category['cuisine_name']) }}">{{category.cuisine_name}}</a>
+        {% for category in categories %}
+            <a class="dropdown-item" href="{{ url_for('get_recipes_by_category',category=category['cuisine_name']) }}">{{category.cuisine_name}}</a>
         {% endfor %}
   </div>
 </div>
