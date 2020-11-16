@@ -71,12 +71,13 @@ def add_recipes():
             "methods": request.form.get("methods"),
             "created_by": session["user"]
         }
-       
+        
         mongo.db.recipes.insert_one(recipe)
         flash("New Recipe Added")
         return redirect(url_for("home"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
+   
     return render_template("add_recipes.html",  categories=categories)
 
 
@@ -146,9 +147,12 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+@app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
+def edit_recipe(recipe_id):
+    recipes = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_recipe.html", recipes=recipes, categories=categories)
 
-def edit_recipes ():
-    return render_template("edit_recipe.html")
 
 def check_recipe():
     return render_template("check_recipe.html")    

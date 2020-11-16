@@ -1,43 +1,112 @@
 {% extends "base.html" %}
 {% block content %}
-<section>
-        <!-- flash messages -->
-    {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    
+   <h3 class=" deep-orange-text text-darken-2 center-align" >Edit Recipe</h3>
+    <div class="row card-panel">
+        <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
+        <!--- Category Section-->
+			<div class="row">
+				<div class="input-field col s12">
+                    <i class="fas fa-folder-open prefix prefix deep-orange-text text-darken-2"></i>
+                <select id="category_name" name="category_name" class = "validate" required>
+                    <option value="" disabled selected>Choose your Course Meal</option>
+                {% for category in categories %}
+                    <option value="{{ category.category_name }}"> {{ category.category_name }}</option>
                 {% endfor %}
-            {% endif %}
-        {% endwith %}
-    </section>
-
-    <main class="container">
-
-<h4 class="text-center py-4">Three equal columns layout</h4>
-
-<!-- Grid row -->
-<div class="row">
-
-  <!-- Grid column -->
-  <div class="col-lg-4 col-md-12 mb-4">
-
-    <!--Card Primary-->
-    <div class="card mdb-color text-center z-depth-2">
-      <div class="card-body">
-        <h3 class="text-uppercase font-weight-bold cyan-text mt-2 mb-3"><strong>First column</strong></h3>
-        <p class="white-text mb-0">Ut enim ad minima veniam, quis nostrum exercita tionem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit
-          qui in ea voluptate non proident velit esse quam. </p>
-      </div>
+              </select>
+        <label>Course Meal Category</label>
+        
     </div>
-    <!--/.Card Primary-->
+   </div>
+   <div class="row">
+        <div class="input-field col s12">
+            <i class="fas fa-folder-open prefix prefix deep-orange-text text-darken-2"></i>
+        <select id="category_name" name="category_name" class = "validate" required>
+        <option value="" disabled selected>Choose your Cuisine</option>
+            {% for Cuisine in Cuisine %}
+             <option value="{{ Cuisine.cuisine_name }}"> {{ Cuisine.cuisine_name }}</option>
+            {% endfor %}
+              </select>
+        <label>Cuisine Category</label>
+    </div>
+   </div>
+<!---Recipe Name section-->
+    <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-utensils prefix deep-orange-text text-darken-2"></i>
+          <input id="recipe_name"  name = "recipe_name" type="text" class="validate">
+          <label for="recipe_name">Recipe Name</label>
+    </div>
+    </div>
 
-  </div>
-  <!-- Grid column -->
-
-
+    <!--   Recipe Description Section -->
+        <div class="row" >    
+         <div class="input-field col s12">
+          <i class="fas fa-align-justify prefix deep-orange-text text-darken-2"></i>
+           <textarea id="recipe_description" name="recipe_description" minlength="6"
+             maxlength="200" class="materialize-textarea validate" required></textarea>
+          <label for="recipe_description">Recipe Description</label>
+    </div>
+    </div>
+    <!---   Cook Time Section-->
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="far fa-clock prefix deep-orange-text text-darken-2"></i>
+          <input id="cook_time"  name = "cook_time" type="text" class="validate">
+          <label for="cook_time">Cook Time</label>
+        </div>
+      </div>
+      <!--- Servings Section-->
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-utensil-spoon prefix deep-orange-text text-darken-2"></i>
+          <input id="recipe_name"  name = "recipe_name" type="text" class="validate">
+          <label for="recipe_name">Servings</label>
+          </div>
+      </div>
+      <!---Ingredients Section--->
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-list prefix deep-orange-text text-darken-2"></i>
+          <input id="ingredients"  name = "ingredients" type="text" class="validate">
+          <label for="ingredients">Enter Ingredients Separated By commas</label>
+          </div>
+      </div>
+      <!-----Methods Section-->
+       <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-list-ol prefix deep-orange-text text-darken-2"></i>
+          <input id="servings"  name = "servings" type="text" class="validate">
+          <label for="servings">Methods</label>
+          </div>
+      </div>
+      <!-- submit button section--> 
+    <div class= "row">
+        <div class="col s12 center-align">
+          <button type="submit" class="btn btn-large deep-orange text darken-2">
+            Edit Recipe <i class="fas fa-edit right"></i>
+        </button>
+        </div>
+        </div>
+        </form>
+    </div>
+    </div>
+    <div class ="container">
+    <div class="row">
+    <div class="col s9" >
+    <div class="card-action">
+        <a href="#" class= "btn-small yellow darken-4 ">Edit</a>
+        <a href="#" class= "btn-small deep orange darken-4 ">Done</a>
+      </div>       
+     </div>
+     </div>
+     </div>
+    
 {% endblock %}
-
-
-
-     
