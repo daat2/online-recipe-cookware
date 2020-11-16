@@ -57,9 +57,9 @@ def search():
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
+    
 
-
-@app.route("/add_recipes", methods=["GET","POST"])
+@app.route("/add_recipes", methods=["GET", "POST"])
 def add_recipes():
     if request.method == "POST":
         recipe = {
@@ -68,10 +68,10 @@ def add_recipes():
             "description_name": request.form.get("description_name"),
             "cook_time": request.form.get("cook_time"),
             "ingredients": request.form.get("ingredients"),
-            "methods": request.form.get("methods"),  
-            "created_by ": session["user"]                      
-          }
-
+            "methods": request.form.get("methods"),
+            "created_by": session["user"]
+        }
+       
         mongo.db.recipes.insert_one(recipe)
         flash("New Recipe Added")
         return redirect(url_for("home"))
