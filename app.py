@@ -60,9 +60,9 @@ def search():
 
 
 @app.route("/add_recipes", methods=["GET","POST"])
-def add_recipes(): 
-    if  request.method == "POST":
-        recipe ={
+def add_recipes():
+    if request.method == "POST":
+        recipe = {
             "recipe_name": request.form.get("recipe_name"),
             "category_name": request.form.get("category_name"),
             "description_name": request.form.get("description_name"),
@@ -71,10 +71,10 @@ def add_recipes():
             "methods": request.form.get("methods"),  
             "created_by ": session["user"]                      
           }
-          
+
         mongo.db.recipes.insert_one(recipe)
         flash("New Recipe Added")
-        return redirect (url_for("home"))
+        return redirect(url_for("home"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_recipes.html",  categories=categories)
