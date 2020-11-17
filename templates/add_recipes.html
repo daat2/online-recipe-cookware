@@ -20,8 +20,8 @@
    <div class="row">
         <div class="input-field col s12">
             <i class="fas fa-folder-open prefix prefix deep-orange-text text-darken-2"></i>
-        <select id="category_name" name="category_name" class = "validate" required>
-        <option value="" disabled selected>Choose your Cuisine</option>
+        <select id="cuisine_name" name="cuisine_name" class = "validate" required>
+        <option value="" disabled>Choose your Cuisine</option>
             {% for Cuisine in Cuisine %}
              <option value="{{ Cuisine.cuisine_name }}"> {{ Cuisine.cuisine_name }}</option>
             {% endfor %}
@@ -101,8 +101,8 @@
     <div class="row">
     <div class="col s9" >
     <div class="card-action">
-        <a href="{{ url_for('edit_recipe', recipe_id='') }}" class= "btn-small yellow darken-4 ">Edit</a>
-        <a href="#" class= "btn-small deep orange darken-4 ">Done</a>
+        <a href="{{ url_for('edit_recipe', recipe_id='') }}" class= "btn-small yellow darken-4 ">EDIT</a>
+        <a href="{{ url_for('delete_recipe', recipe_id='') }}" class= "btn-small deep orange darken-4 ">DELETE</a>
       </div>       
      </div>
      </div>

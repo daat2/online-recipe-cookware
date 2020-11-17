@@ -42,9 +42,7 @@ def get_recipes_by_cuisine(cuisine):
     categories = mongo.db.categories.find()
     return render_template("recipes.html", cuisines=cuisines, categories=categories, recipes=recipes)
 
-def test(students):
-    for child in students:
-        print(child)
+
 
 @app.route("/recipe/<recipe_id>")
 def get_recipe_detail(recipe_id):
@@ -76,8 +74,9 @@ def add_recipes():
         flash("New Recipe Added")
         return redirect(url_for("home"))
 
-    categories = mongo.db.categories.find().sort("category_name", 1)
-   
+    categories =list( mongo.db.categories.find().sort("category_name", 1))
+
+
     return render_template("add_recipes.html",  categories=categories)
 
 
@@ -149,6 +148,19 @@ def profile(username):
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    if request.method == "POST":
+        submit = {
+            "recipe_name": request.form.get("recipe_name"),
+            "category_name": request.form.get("category_name"),
+            "description_name": request.form.get("description_name"),
+            "cook_time": request.form.get("cook_time"),
+            "ingredients": request.form.get("ingredients"),
+            "methods": request.form.get("methods"),
+            "created_by": session["user"]
+        }
+        mongo.db.recipes.update({{"_id": ObjectId(recipe_id)}}, submit)
+        flash("New Recipe updated")
+
     recipes = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_recipe.html", recipes=recipes, categories=categories)
@@ -184,9 +196,19 @@ def add_cuisine_category():
 
      return render_template("add__cuisine_category.html")   
 
+     
 @app.route("/cookware")
 def cookware():
     return render_template("cookware.html")     
+    
+
+@app.route("/delete_recipe/<recipe_id>")
+def delete_recipe(recipe_id):
+    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
+    flash("Recipe Deleted")
+    return redirect(url_for("add_recipes"))
+
+
 
 
 if __name__ == "__main__":
