@@ -17,7 +17,7 @@
         
     </div>
    </div>
-   <div class="row">
+   <!-- <div class="row">
         <div class="input-field col s12">
             <i class="fas fa-folder-open prefix prefix deep-orange-text text-darken-2"></i>
         <select id="cuisine_name" name="cuisine_name" class = "validate" required>
@@ -27,8 +27,8 @@
             {% endfor %}
               </select>
         <label>Cuisine Category</label>
-    </div>
-   </div>
+    </div> -->
+   <!-- </div> -->
 <!---Recipe Name section-->
     <div class="row">
         <div class="input-field col s12">
@@ -97,17 +97,6 @@
         </div>
         </form>
     </div>
-    <div class ="container">
-    <div class="row">
-    <div class="col s9" >
-    <div class="card-action">
-        <a href="{{ url_for('edit_recipe', recipe_id='') }}" class= "btn-small yellow darken-4 ">EDIT</a>
-        <a href="{{ url_for('delete_recipe', recipe_id='') }}" class= "btn-small deep orange darken-4 ">DELETE</a>
-      </div>       
-     </div>
-     </div>
-     </div>
-    
     <div class= "container">
     <div class = "row">
     <div class= "col s12 center-align">
