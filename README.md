@@ -1,6 +1,6 @@
-# *PROJECT NAME: DAAT Recipes* : *Project 3*
-
-
+# **PROJECT NAME:Online-Recipe-Cookware -Project 3**
+*Brand Name :  DAAT Recipes*
+---
 
 ## Project Concept
 
@@ -15,76 +15,117 @@ Benefits to me, I was able to understand how database works behind the scene, in
 the speed it offers in creating webpages using  the philosophy of “DRY”:  Don’t repeat yourself, 
  by using python route decorator , Jinja and template inheritance using the base html. 
  I have gained more knowledge to help me advance in my career as a web developer.
-
- ----------
+---
 
 
  ## UX 
-This project was developed with the User focus mind so that users can see how the system works 
+This project was developed with the User focus mind so that users can see how the system functioanlity works 
 especially where they can add recipe and view the recipe added when logged into their profile.
 
 
 ## User stories
 
-I have used a persona to create user stories.
-User Story (Persona: Barbara works as self employed as a cook.)
+*I have used  persona to create user stories.*
+
+**User Story (Persona: Barbara works as self employed as a cook.)**
 
 1.	As a cook, 
 I should be able to create a profile, add my recipe to the page and send the link fans to check out my recipe.
     
-   **Acceptance criteria**:Barbara should be able to click on the new recipe and add new recipe to the page and send link to fans page. 
+*Acceptance criteria*:Barbara should be able to click on the new recipe and add new recipe to the page and send link to fans page. 
 
-User Story (Persona: Rose is a grocery shopper she needs to prepare her favourite menu and to get the ingredients from the store.)
+**User Story (Persona: Rose is a grocery shopper she needs to prepare her favourite menu and to get the ingredients from the store.)**
    
 2. As a grocery shopper,
 I should be able to browse for my favourite recipe and click on the link to get the list of ingredients to be purchased in the next shopping.
 
- **Acceptance Criteria**:: Rose should be able to get list of ingredients from her selected favourite recipe and get the list of ingredients.   
+*Acceptance Criteria*:: Rose should be able to get list of ingredients from her selected favourite recipe and get the list of ingredients.   
  
-User Story (Persona: General users, they can browse all recipes and select any method to use for their cooking.)
+**User Story (Persona: General users, they can browse all recipes and select any method to use for their cooking.)**
 
 3.	As a general user,
 I should be able to browse all the recipes and view the recipe ingredients and methods of my choice.
 
- **Acceptance Criteria**: General users should be able to browse all the recipes. view ingredients and methods of any recipe of their choice . 
+ *Acceptance Criteria*: General users should be able to browse all the recipes. view ingredients and methods of any recipe of their choice . 
 
  
-
 ### Wireframes
 
-TMy wireframe was designed with Balsamic software tool and imported to PDF for viewing. 
+My wireframe was designed with Balsamic software tool and imported to PDF for viewing. 
 The document can be found in the folder path named Wireframe.
 The wire frame was designed based on my initial planning phase as a mock-up  to show the  basic functionality of  the webpage and end users interaction on different browsers .
 The final product of the webpage it’s slightly different due to additional requirements along the design phase.  I have used Agile Methodology as part of my project management 
 
 
-Click on the link to open the Wireframe.[Simon Game Wireframe](https://github.com/daat2/play-simongame/blob/master/assets/wireframe/simonGame-wireframe.pdf)
+Click on the link to open the Wireframe.[DAAT Recipe ](https://github.com/daat2/play-simongame/blob/master/assets/wireframe/simonGame-wireframe.pdf)
 
 # Features
 ----------------------------------
 
-## Existing Features on the game board :
- * ON/OFF Switch toggle button : This enable users to interact with the gameboard
- initiate the game.
- * Four Colored Buttons : These are interactive buttons for users to press to play the game and see the effects of each button presses.
- * Start Button : This enable game player to start the game,a sound is heard to verify start button function.
- * Strict Button :Enable game player to  play in the strict mode, a check mark is displayed in the box to verify strict mode 
- is on and no check mark means users play in normal mode.
- * Count Button : This button displays the game player levels as they press the buttons to interact with the game 
- * Help Button ? These are PDF user manual to enable game player to understand how to play the game. 
+## Existing Features 
+DAAT Recipe -Online-reipe-cookware :
+
+ *  Site Logo: I designed site logo as part of UX design so users can identify the brand as a recipe webpage.
+ * Favicons:   I created a favicon for my site, it is little icons displayed on the browser tab and bookmarks bar as an identity of my site so users can recognise the website..
+ *  Navbar : The Navbar comprises of all the navigation links which users will use to navigate through all the pages of the website
+ *  Secondary Navbar:  The secondary Navbar is a distinct Nav, user friendly easy access for users  to navigate through the Course meal and Cuisines of their choice.
+ Login : Users will be able to login with their personal login details  and these details will match the authentication criteria.   
+ Registration: On the landing page, a user’s will be able to click the login tab, if not registered, they will be able to complete the form and complete their details.
+ Logout: Users can logout of the page after each session.
+Flash Messages: These are incorporated in my code for users to be able get notification of an action performed by the user.
+Profile page: A profile page allows users to create a profile for their page so they can see a new recipe added on their profile.
+Search button: Enables users to find a recipe using short character.
+Clear button: Clears the result of the search performed.
+Cookware: User can click on the cookware to view the cooking tools and clicking on the More info button opens up a new browser to see more from the supplier’s page.
+Social media Link: Opens up social page for users to visit their social networks.
 
     
 ## Features Left to Implement
-  Due to time constraint on the project have not been priviledge to implement Certain features :
-  Ideas to implement are :
-  * Different levels of play mode : This will enable player to find it stimulating to build their memory strength.Such as 
-    Normal and Easy mode.
-  * Link to share game with friends on social media sites.
-  * Further improvements to be made for responsiveness using media queries.
   
+ I am constrained by time and volume of the contents which limit my strength to provide more functionality for this project. 
+If I was privileged and also something I will also implement as part of my work in progress in future, I   would implement the following ideas:
+Login By Email: Users should be able to login by email, which is easier for them to remember rather than Username.
+Share Recipe by Social Media and Email: To send recipe created to their email and share link with friends via email and social media network.
+Call To Actions:  Ability for users to be able to delete and update recipe created.
+Password Functionality:   User should   be able to change password and create a new on.
+Subscription: To subscribe to recipe news later and be able to post new recipes ideas on the page
+
 
 ## Technologies Used
 ### Frameworks and libraries used in the project
+
+Python : A progarrming language https://www.python.org/dev/peps/pep-0008/  I have used python Framework
+
+incoproartin pipr python tooland other pip command 
+Jinja https://realpython.com/primer-on-jinja-templating/
+
+JavaScript
+Jquery : https://jquery.com/download/
+CSS:https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+HTml:https://www.w3schools.com/
+
+Gitpod  : https://gitpod.io/login/?returnTo=https://gitpod.io/%23https://www.gitpod.io/
+Heroku: 
+Pymogo :https://flask-pymongo.readthedocs.io/en/latest/
+To host repositories 
+GitHub:https://github.com/
+Heroku: To host our web applications
+Balsamic:Draw up mockup for  project 
+Materialize : https://materializecss.com/navbar.html.Front end framwork which to build responsive applications
+Navbar crrate using materialize libraries
+Flask:https://hackersandslackers.com/flask-routes/. Flask Framework connect to datase to HTML GUI
+https://cdnjs.com/libraries/font-awesome Libraies for CSS 
+ werkzeug  : https://werkzeug.palletsprojects.com/en/1.0.x/utils/?highlight=password
+ werkzeug: Used thier libares to geneate password authentication
+ materialize design bootsrap:https://mdbootstrap.com/education/bootstrap/
+MongoDB: https://docs.atlas.mongodb.com/security-add-mongodb-users/
+Used MongoDB Atlas and cluster to create Collections(Tables) using key values and field.
+Google Fonts :  https://fonts.google.com/specimen/Roboto+Condensed?query=roboto
+Used to beautify the contenst of teh page to nake it easir for users of teh websiite 
+Code Institute templates libraries: .Used to get hte project tempaltes and libraies .https://github.com/Code-Institute-Org/gitpod-full-template
+
+
+
 
 [JavaScript:](https://www.w3schools.com/js/)The project is heavily based on JavaScript used to build the project.
 
@@ -129,6 +170,8 @@ Deployment process followed to deploy to Github Pages :
 Deployment steps : Go into settings> github pages> master branch.
 The project is deployed in [Github pages](https://daat2.github.io/play-simongame/)
 
+Hosting: 
+
 ### Steps for a developer to run the project locally.
 
 
@@ -153,8 +196,36 @@ Link sent to developer [simongame](https://daat2.github.io/play-simongame/ ).
 Some of the ideas i used for some of the content were derived from watching videos on previous Simon game 
 on YouTube and research on how JavaScript works to get indepth understanding in order to replicate the game.
 Links to pages visited below:
+
+		https://www.pexels.com/		
+       https://www.allrecipes.com/		
+
+			https://www.simplyrecipes.com/		
 		
-								
+       https://www.epicurious.com/		
+					
+                    https://www.foodiesfeed.com/	
+                 			
+https://codepen.io/klesht/pen/pjjegK idea for reipe card	
+https://codepen.io/michmy/pen/GrzwVL Contents of recipe card
+
+https://htmlcolorcodes.com/tutorials/css-text-color/'
+https://flask.palletsprojects.com/en/1.1.x/api/#flask.Flask.route
+
+ To creat my fonts https://fontawesome.bootstrapcheatsheets.com/#
+Favicon generator  https://realfavicongenerator.net/
+
+BBC food https://www.bbc.co.uk/food/recipes
+
+Lakeland: cookware tools https://www.lakeland.co.uk/	
+Recipe picture https://commons.wikimedia.org/wiki/File:Jollof_rice_and_Dodo.jpg						
+http://www.responsivegridsystem.com/calculator/				
+https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block						
+https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block						
+	Cloudinary.com							
+https://stackoverflow.com/questions/48975383/why-to-use-safe-in-jinja2-python							
+Code institte Data Centric Module.(Mini PROJECT-Task Managr ).https://courses.codeinstitute.net/
+
 * [ConvertingColors](https://convertingcolors.com/rgb-color-50_50_50.html?search=RGB(50,%2050,%2050)	
 
 * [Board Patterns](https://www.toptal.com/designers/subtlepatterns/thumbnail-view/page/3/)
@@ -195,7 +266,8 @@ Links to pages visited below:
 
     
 ## Media
-
+ cloudinary :
+ 
  The sounds for the board are copied from (https://freesound.org/)
  Sounds for each button : 
 
