@@ -16,7 +16,7 @@
 * [ **Testing**](#Testing)
 * [ **Deployment**](#Deployment)
 * [**Credits** ](#Credits)
-    * [**Contents** ](#Contents)
+    * [**Content** ](#Content)
     * [ **Media**](#Media)
  * [**Acknowledgements** ](#Acknowledgements)
 
@@ -30,7 +30,7 @@ The hands on experience achieved in the milestone project can be utilised in any
 Also provides in-depth exposure and knowledge of backend functionality CRUD (Create, Read, Update and Delete.
 Emphasis placed on ( python, Flask and Databases; Relational database (SQL) and NoSQL ( Mongo DB).
 
-Benefits to me, I was able to understand how database works behind the scene, interacting python with Flask with MongoDB, 
+Benefits to me, I was able to understand how database works behind the scene, interacting python with Flask and MongoDB, 
 the speed it offers in creating webpages using  the philosophy of “DRY”:  Don’t repeat yourself, 
  by using python route decorator , Jinja and template inheritance using the base html. 
  I have gained more knowledge to help me advance in my career as a web developer.
@@ -77,10 +77,10 @@ The final product of the webpage it’s slightly different due to additional req
 Click on the link to open the Wireframe.[**Wireframe DAAT Recipe**](https://github.com/daat2/online-recipe-cookware/blob/master/static/wireframe/Recipe%20project%20wireframe1.pdf)
 
 # Features
-- - 
+
 
 ## Existing Features 
-DAAT Recipe -Online-reipe-cookware :
+DAAT Recipe :Online-recipe-cookware
 
  * Site Logo-I designed site logo as part of UX design so users can identify the brand as a recipe webpage.
  * Favicons- I created a favicon for my site, it is little icons displayed on the browser tab and bookmarks bar as an identity of my site so users can recognise the website..
@@ -110,57 +110,69 @@ If I was privileged and also something I will also implement as part of my work 
 
 
 ## Technologies Used
+
 ### Frameworks and libraries used in the project
 
-Python : A progarrming language https://www.python.org/dev/peps/pep-0008/  I have used python Framework
+* [**Python** ](https://www.python.org/dev/peps/pep-0008/)
+   * The whole project is based on Python programming language due to its flexibility. I have used the link attached as a reference guide in the project.
+  
+*  [**Jinja**]( https://realpython.com/primer-on-jinja-templating/)
+   * The Jinja templating language have been used in this project to write logic inside our HTML templates, which allows us to use Python for loops, if statements, and also inheritance.
+   
+* [ **JavaScript**](https://www.javascript.com/)
+    *  JavaScript libraries  and framework have been used to initialize my Navbar.
 
-incoproartin pipr python tooland other pip command 
-Jinja https://realpython.com/primer-on-jinja-templating/
+* [**JQuery**](https://jquery.com/download/)
+   *  JQuery have been used as part of javascript libraries to communicate with the DOM.
 
-JavaScript
-Jquery : https://jquery.com/download/
-CSS:https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
-HTml:https://www.w3schools.com/
+* [**CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+  *  Used CSS to customize the styling  and customizing the page elements.
 
-Gitpod  : https://gitpod.io/login/?returnTo=https://gitpod.io/%23https://www.gitpod.io/
-Heroku: 
-Pymogo :https://flask-pymongo.readthedocs.io/en/latest/
-To host repositories 
-GitHub:https://github.com/
-Heroku: To host our web applications
-Balsamic:Draw up mockup for  project 
-Materialize : https://materializecss.com/navbar.html.Front end framwork which to build responsive applications
-Navbar crrate using materialize libraries
-Flask:https://hackersandslackers.com/flask-routes/. Flask Framework connect to datase to HTML GUI
-https://cdnjs.com/libraries/font-awesome Libraies for CSS 
- werkzeug  : https://werkzeug.palletsprojects.com/en/1.0.x/utils/?highlight=password
- werkzeug: Used thier libares to geneate password authentication
- materialize design bootsrap:https://mdbootstrap.com/education/bootstrap/
-MongoDB: https://docs.atlas.mongodb.com/security-add-mongodb-users/
-Used MongoDB Atlas and cluster to create Collections(Tables) using key values and field.
-Google Fonts :  https://fonts.google.com/specimen/Roboto+Condensed?query=roboto
-Used to beautify the contenst of teh page to nake it easir for users of teh websiite 
-Code Institute templates libraries: .Used to get hte project tempaltes and libraies .https://github.com/Code-Institute-Org/gitpod-full-template
+* [**HTML**](https://www.w3schools.com/)
+   * I have used Semantic HTML Markup Language to write the project code,with some contents example picked from W3Schools site.
 
+* [**Gitpod**](https://gitpod.io/login/?returnTo=https://gitpod.io/%23https://www.gitpod.io/)
+    * Development Environment Editor for code and workspace.
 
+* [**GitHub**](GitHub:https://github.com/)
+    * I have used GitHub to create project repository and  for version control using Git functioanlity.
 
+* [**Heroku**](https://www.heroku.com/)
+    * Use to deploy and maintains flask applications.I have used Heroku to deploy my application in a web browser.
 
-[JavaScript:](https://www.w3schools.com/js/)The project is heavily based on JavaScript used to build the project.
+* [**pymongo**](https://flask-py*mongo.readthedocs.io/en/latest/)
+    * A pymongo library used in the project to run Mongo commands from a python file.
 
-[SemanticHTML:](https://www.w3schools.com/html/) The project uses HTML to write the code.
+* [**Balsamic**](https://balsamiq.com/)
+    * A software design tool for mockup.I have used Balsamic to structure the basic functionality needed for my Recipe website project.
 
-[CSS:](https://www.w3schools.com/css/) Used style the gameboard.
+* [**Materialize**](https://materializecss.com/navbar.html)
+ *  Front-end frameowrk to build responsive applications. I have used the libraries to create my  responsive Navbar.
 
-[Gitpod:](https://gitpod.io/workspaces/) Workspace Editor for writing the code.
+* [**Flask**](https://hackersandslackers.com/flask-routes/)
+    * Flask Framework has been use to connect to database of our HTML graphical user interfaces (GUIs).
+         
+* [**Font-awesome**](https://cdnjs.com/libraries/font-awesome) 
+    * It is a content delivery network imported for my CSS and Javascript libraries.
 
-[Github:](https://github.com) It's used as repository for version control and commit update.
+* [**Werkzeug**](https://werkzeug.palletsprojects.com/en/1.0.x/utils/?highlight=password) 
+    *  The libraries to generate password authentication.
+   **
+* [**Material Design for Bootstrap 4**](https://mdbootstrap.com/education/bootstrap/ )
+    * I have used the framework to design my social network link.
 
-[Markdown:](https://raw.githubusercontent.com/Code-Institute-Solutions/readme-template/master/README.md) Used to write ReadMe file.
+* [**MongoDB**](https://docs.atlas.mongodb.com/security-add-mongodb-users/)
+    * It is use has a connection between application and Databases.I Used MongoDB Atlas and cluster to create Collections(Tables) using key values and field.
 
-[Jquery:](https://jquery.com/). Used to manupulate  the DOM elements.
+* [**Google Fonts**](https://fonts.google.com/specimen/Roboto+Condensed?query=roboto)
+    * Used to beautify and style fonts for the webpage to make it easier for users to read.
 
-[Balsamic:](https://balsamiq.com/) I have used this tool to design the interface of the game functionality.
+* [**Codeinstitute**](https://codeinstitute.net/5-day-coding-challenge/?utm_term=code%20institute&utm_campaign=a%2526c_BR_IRL_Code_Institute&utm_source=adwords&utm_medium=ppc&hsa_net=adwords&hsa_tgt=kwd-319867646331&hsa_ad=417883010337&hsa_acc=8983321581&hsa_grp=62188641240&hsa_mt=e&hsa_cam=1578649861&hsa_kw=code%20institute&hsa_ver=3&hsa_src=g&gclid=Cj0KCQiAkuP9BRCkARIsAKGLE8UKGkHlbFcn5QITztlwWRaPBWLYQS9C51AIyuOS174_XD_nATSEj70aAnN7EALw_wcB&gclsrc=aw.ds)
+     
+    * I have used CodeInstitute templates libraries for this project.
 
+* [**Markdown1** ](https://guides.github.com/features/mastering-markdown/)
+    * I have used this website to learn how to write my README Documentation.
 
 ## Testing
 -----------------------------
@@ -209,15 +221,17 @@ Link sent to developer [simongame](https://daat2.github.io/play-simongame/ ).
 
 
 # Credits
----------------------------------
+
 ## Content
-Some of the ideas i used for some of the content were derived from watching videos on previous Simon game 
-on YouTube and research on how JavaScript works to get indepth understanding in order to replicate the game.
-Links to pages visited below:
+ I have endeavoured to write all my code by myslef but used the links and contents below for generating ideas and inspiration to make my the project responsive and creative.
 
-		https://www.pexels.com/		
-       https://www.allrecipes.com/		
 
+
+| Website Sources             	| Ideas Used                                  	|
+|-----------------------------	|---------------------------------------------	|
+|   https://www.pexels.com/   	| Contents for recipe ingredients and Methods 	|
+| https://www.allrecipes.com/ 	| Recipe page                                 	|
+|                             	|                                             	|
 			https://www.simplyrecipes.com/		
 		
        https://www.epicurious.com/		
