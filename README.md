@@ -3,21 +3,22 @@
 ---
 # **TABLE OF Contents**
 
-* [**Project Concept**] (#Project Concept)
-* [**UX** ] (#UX)
-    * [**User Stories**] (#User-Stories)
-    * [**Wireframe** ] (#Wireframe)
-* [**Features** ] (#Features)
-   * [**Existing Features**] (#Existing Features)
-   * [**Features Left to Implement**] (# Features Left to Implement)
-* [**Technologies Used**] (#Technologies Used)
-    * [**Frameworks and libraries used in the project**](#Frameworks and libraries used in the project)
-* [ **Testing**] (#Testing)
-* [ **Deployment**] (#Deployment)
-* [**Credits** ] (#Credits)
-    * [**Contents** ] (#Contents)
-    * [ **Media**] (#Media)
- * [**Acknowledgements** ] (#Acknowledgements)
+* [**Project Concept**](#Project-Concept)
+
+* [**UX** ](#UX)
+    * [**User Stories**](#User-Stories)
+    * [**Wireframe** ](#Wireframe)
+* [**Features** ](#Features)
+   * [**Existing Features**](#Existing-Features)
+   * [**Features Left to Implement**](#Features-Left-to-Implement)
+* [**Technologies Used**](#Technologies-Used)
+    * [**Frameworks and libraries used in the project**](#Frameworks-and-libraries-used-in-the-project)
+* [ **Testing**](#Testing)
+* [ **Deployment**](#Deployment)
+* [**Credits** ](#Credits)
+    * [**Contents** ](#Contents)
+    * [ **Media**](#Media)
+ * [**Acknowledgements** ](#Acknowledgements)
 
 ---
 ## Project Concept
@@ -73,7 +74,7 @@ My wireframe was designed with Balsamic software tool and imported to PDF for vi
 The document can be found in the folder path named Wireframe.
 The wireframe was initiative was based on my initial planning phase as a mock-up  to show the  basic functionality of  the webpage and end users interaction on different browsers .
 The final product of the webpage it’s slightly different due to additional requirements along the design phase.  I have used Agile Methodology as part of my project management 
-Click on the link to open the Wireframe.[**Wireframe DAAT Recipe**] (https://github.com/daat2/online-recipe-cookware/blob/master/static/wireframe/Recipe%20project%20wireframe1.pdf)
+Click on the link to open the Wireframe.[**Wireframe DAAT Recipe**](https://github.com/daat2/online-recipe-cookware/blob/master/static/wireframe/Recipe%20project%20wireframe1.pdf)
 
 # Features
 - - 
