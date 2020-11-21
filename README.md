@@ -229,8 +229,8 @@ Link sent to developer [simongame](https://daat2.github.io/play-simongame/ ).
 
 | Website Sources             	| Ideas Used                                  	|
 |-----------------------------	|---------------------------------------------	|
-|   https://www.pexels.com/   	| Contents for recipe ingredients and Methods 	|
-| https://www.allrecipes.com/ 	| Recipe page                                 	|
+|  [**Pixels**]( https://www.pexels.com/)   	| Contents for recipe ingredients and Methods 	|
+| [**Allrecipes**](https://www.allrecipes.com/)  	| Recipe page                                 	|
 |                             	|                                             	|
 			https://www.simplyrecipes.com/		
 		
