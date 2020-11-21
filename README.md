@@ -1,24 +1,25 @@
-# **PROJECT NAME:Online-Recipe-Cookware -Project 3**
+## **PROJECT NAME:Online-Recipe-Cookware -Project 3**
 *Brand Name :  DAAT Recipes*
 ---
 # **TABLE OF Contents**
-* [**Project Concept**](#Project Concept)
-* [**UX** ] (#UX)
-* [**User Stories**]
-* [**Wireframe** ]
-* [**Features** ]
- Existing Features
-Features Left to Implement
- Technologies Used
- Frameworks and libraries used in the project
- Testing
- Deployment
- Credits
- Contents
- Media
- Acknowledgements
-- - 
 
+* [**Project Concept**] (#Project Concept)
+* [**UX** ] (#UX)
+    * [**User Stories**] (#User-Stories)
+    * [**Wireframe** ] (#Wireframe)
+* [**Features** ] (#Features)
+   * [**Existing Features**] (#Existing Features)
+   * [**Features Left to Implement**] (# Features Left to Implement)
+* [**Technologies Used**] (#Technologies Used)
+    * [**Frameworks and libraries used in the project**](#Frameworks and libraries used in the project)
+* [ **Testing**] (#Testing)
+* [ **Deployment**] (#Deployment)
+* [**Credits** ] (#Credits)
+    * [**Contents** ] (#Contents)
+    * [ **Media**] (#Media)
+ * [**Acknowledgements** ] (#Acknowledgements)
+
+---
 ## Project Concept
 
 The initaitaive coincides with the 2019 covid pandemic, which set the scene for people to able to make their restaurant favourite menu in their home and be creative about 
@@ -32,7 +33,7 @@ Benefits to me, I was able to understand how database works behind the scene, in
 the speed it offers in creating webpages using  the philosophy of “DRY”:  Don’t repeat yourself, 
  by using python route decorator , Jinja and template inheritance using the base html. 
  I have gained more knowledge to help me advance in my career as a web developer.
----
+
 
 
  ## UX 
@@ -72,7 +73,7 @@ My wireframe was designed with Balsamic software tool and imported to PDF for vi
 The document can be found in the folder path named Wireframe.
 The wireframe was initiative was based on my initial planning phase as a mock-up  to show the  basic functionality of  the webpage and end users interaction on different browsers .
 The final product of the webpage it’s slightly different due to additional requirements along the design phase.  I have used Agile Methodology as part of my project management 
-Click on the link to open the Wireframe.[Wireframe DAAT Recipe :](https://github.com/daat2/online-recipe-cookware/blob/master/static/wireframe/Recipe%20project%20wireframe1.pdf)
+Click on the link to open the Wireframe.[**Wireframe DAAT Recipe**] (https://github.com/daat2/online-recipe-cookware/blob/master/static/wireframe/Recipe%20project%20wireframe1.pdf)
 
 # Features
 - - 
@@ -80,25 +81,26 @@ Click on the link to open the Wireframe.[Wireframe DAAT Recipe :](https://github
 ## Existing Features 
 DAAT Recipe -Online-reipe-cookware :
 
- * Site Logo: I designed site logo as part of UX design so users can identify the brand as a recipe webpage.
- * Favicons:   I created a favicon for my site, it is little icons displayed on the browser tab and bookmarks bar as an identity of my site so users can recognise the website..
- *  Navbar : The Navbar comprises of all the navigation links which users will use to navigate through all the pages of the website
- *  Secondary Navbar:  The secondary Navbar is a distinct Nav, user friendly easy access for users  to navigate through the Course meal and Cuisines of their choice.
- * Login : Users will be able to login with their personal login details  and these details will match the authentication criteria.   
- *  Registration: On the landing page, a user’s will be able to click the login tab, if not registered, they will be able to complete the form and complete their details.
- * Logout: Users can logout of the page after each session.
- * Flash Messages: These are incorporated in my code for users to be able get notification of an action performed by the user.
- * Profile page: A profile page allows users to create a profile for their page so they can see a new recipe added on their profile.
- * Search button: Enables users to find a recipe using short character.
- * Clear button: Clears the result of the search performed.
+ * Site Logo-I designed site logo as part of UX design so users can identify the brand as a recipe webpage.
+ * Favicons- I created a favicon for my site, it is little icons displayed on the browser tab and bookmarks bar as an identity of my site so users can recognise the website..
+ * Navbar- The Navbar comprises of all the navigation links which users will use to navigate through all the pages of the website
+ * Secondary Navbar-  The secondary Navbar is a distinct Nav, user friendly easy access for users  to navigate through the Course meal and Cuisines of their choice.
+ * Login- Users will be able to login with their personal login details  and these details will match the authentication criteria.   
+ * Registration- On the landing page, a user’s will be able to click the login tab, if not registered, they will be able to complete the form and complete their details.
+ * Logout- Users can logout of the page after each session.
+ * Flash Messages- These are incorporated in my code for users to be able get notification of an action performed by the user.
+ * Profile page-A profile page allows users to create a profile for their page so they can see a new recipe added on their profile.
+ * Search button- Enables users to find a recipe using short character.
+ * Clear button- Clears the result of the search performed.
  * Cookware: User can click on the cookware to view the cooking tools and clicking on the More info button opens up a new browser to see more from the supplier’s page.
  * Social media Link: Opens up social page for users to visit their social networks.
 
     
 ## Features Left to Implement
   
- * I am constrained by time and volume of the contents which limit my strength to provide more functionality for this project. 
-* If I was privileged and also something I will also implement as part of my work in progress in future, I   would implement the following ideas:
+I am constrained by time and volume of the contents which limit my strength to provide more functionality for this project. 
+If I was privileged and also something I will also implement as part of my work in progress in future, I   would implement the following ideas -
+
 * Login By Email: Users should be able to login by email, which is easier for them to remember rather than Username.
 * Share Recipe by Social Media and Email: To send recipe created to their email and share link with friends via email and social media network.
 * Call To Actions:  Ability for users to be able to delete and update recipe created.
@@ -241,6 +243,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block
 https://stackoverflow.com/questions/48975383/why-to-use-safe-in-jinja2-python							
 Code institte Data Centric Module.(Mini PROJECT-Task Managr ).https://courses.codeinstitute.net/
 
+https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents/33433098#introduction Used for mark down 
 * [ConvertingColors](https://convertingcolors.com/rgb-color-50_50_50.html?search=RGB(50,%2050,%2050)	
 
 * [Board Patterns](https://www.toptal.com/designers/subtlepatterns/thumbnail-view/page/3/)
