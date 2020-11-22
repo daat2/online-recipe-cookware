@@ -232,37 +232,18 @@ Link sent to developer [simongame](https://daat2.github.io/play-simongame/ ).
 |  [**BBCFood**](https://www.bbc.co.uk/food/recipes)                                                                          	| Recipe Ingredients, Methods and     Description.(Cuisine)  	|
 |  [**Allrecipes**](https://www.allrecipes.com/)                                                                              	|  Recipe Ingredients,   Methods and Description.       	|
 |  [**Wiki**](https://commons.wikimedia.org/wiki/File:Jollof_rice_and_Dodo.jpg)                                                   	| Image for cuisine recipe                                 	|
-|  [**Epicurious**](   https://www.epicurious.com/ )                                                                               	|  Card  Design ideas.                                      	|
-|  [**Cloudinary**](   https://cloudinary.com/)                                                                                    	| Design and upload card image properties.                	|
+|  [**Epicurious**]( https://www.epicurious.com/ )                                                                               	|  Card  Design ideas.                                      	|
+|  [**Cloudinary**]( https://cloudinary.com/)                                                                                    	| Design and upload card image properties.                	|
 |  [**Codepen**](https://codepen.io/klesht/pen/pjjegK/)                                                                           	|  Recipe Card Design.                                      	|
-|  [**Codepen**](https://codepen.io/michmy/pen/GrzwVL/)                                                                            	|  Recipe card Contents.                                    	|
-| [**Colorcodes**](https://htmlcolorcodes.com/tutorials/css-text-color/')                                                     	| Color Mix.                                               	|
-| [**Code Institute Data Centric   Module(Mini PROJECT-Task Manager)**](https://courses.codeinstitute.net/)                      	| Used for code resources and ideas.                       	|
+|  [**Codepen**](https://codepen.io/michmy/pen/GrzwVL/)                                                                            	|  Recipe card Contents.                                    	                                 	|
+|  [**Code Institute Data Centric Module(Mini PROJECT-Task Manager)**](https://codeinstitute.net/)                      	| Used for code resources and ideas.                       	|
 |  [**PalletProjects**](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Flask.route)                                     	| To gain more knowledge  on   flask    route decorator.     	|
 |  [**Favicon   generator**](https://realfavicongenerator.net/)                                                                    	| Used to generate  Recipe logo   Favicon.                   	|
 |  [**Lakeland**]( https://www.lakeland.co.uk/   )                                                                                  	| Cookware tools.                                          	|
 |  [**Stackoverflow**](https://stackoverflow.com/questions/48975383/why-to-use-safe-in-jinja2-python)                             	| How to layout and dsiplay MongoDB     Contents in python.  	|
 
                                                             	
-			
-|     Website Sources                                                                                                           	| Project Ideas                                              	|   	|   	|
-|-------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------	|---	|---	|---	|
-|  [**SimplyRecipe**]( https://www.simplyrecipes.com/ )                                                                      	| Recipe   Ingredients, Methods and Description.          	
-| [**BBCFood**](https://www.bbc.co.uk/food/recipes)                                                                         	| Recipe Ingredients, Methods and   Description.(Cuisine) 		|   	|
-| [**Allrecipes**](https://www.allrecipes.com/)                                                                             	|     Recipe Ingredients,   Methods and Description.      	|   	|   	|   	|
-| [**Wiki**](https://commons.wikimedia.org/wiki/File:Jollof_rice_and_Dodo.jpg)                                                  	| Image for cuisine recipe                                	|   	|   	|   	|
-| [**Epicurious**]( https://www.epicurious.com/ )                                                                              	| Card  Design ideas.                                     	|   	|   	|   	|
-| [**Cloudinary**]( https://cloudinary.com/)                                                                                   	| Design and upload card image properties.               	|   	|   	|   	|
-| [**Codepen**](https://codepen.io/klesht/pen/pjjegK/)                                                                          	| Recipe Card Design.                                     	|   	|   	|   	|
-| [**Codepen**](https://codepen.io/michmy/pen/GrzwVL/)                                                                           	| Recipe card Contents.                                   	|   	|   	|   	|
-| [**Colorcodes**](https://htmlcolorcodes.com/tutorials/css-text-color/')                                                    	| Color Mix.                                              		   	|   	|
-| [**Code Institute Data Centric Module(Mini PROJECT-Task Manager)**](https://courses.codeinstitute.net/)                     	| Used for code resources and ideas.                      
-| [**PalletProjects**](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Flask.route)                                    	| To gain more knowledge  on flask    route decorator.    	   	|
-| [**Favicon generator**](https://realfavicongenerator.net/)                                                                   	| Used to generate  Recipe logo Favicon.                  	|   	|   	|
-| [**Lakeland**]( https://www.lakeland.co.uk/ )                                                                                 	| Cookware tools.                                         	|   	|   	|   	|
-| [**Stackoverflow**](https://stackoverflow.com/questions/48975383/why-to-use-safe-in-jinja2-python)                            	| How to layout and dsiplay MongoDB   Contents in python. 	|   	|   	|   	|
 
-    
 ## Media
 [**cloudinary**](https://cloudinary.com/)
 * Used the resources to upload all card images.
