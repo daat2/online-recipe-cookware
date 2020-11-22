@@ -172,7 +172,7 @@ If I was privileged and also something I will also implement as part of my work 
      
     * I have used CodeInstitute templates libraries for this project.
 
-* [**Markdown1** ](https://guides.github.com/features/mastering-markdown/)
+* [**Markdown** ](https://guides.github.com/features/mastering-markdown/)
     * I have used this website to learn how to write my README Documentation.
 
 ## Testing
@@ -202,7 +202,7 @@ Code is written in Gitpod and version controlled in GitHub.
 * Heroku Deployment Steps:
 * Assumptions:
     * User has Heroku account.
-    * Files added and commited to git using git commands.            
+    * Files added and committed to git using git commands.            
  
 1. Created Heroku App with the App name.
 2. Linked my  local Git repository to Heroku.
@@ -217,29 +217,27 @@ Code is written in Gitpod and version controlled in GitHub.
 9. Back to Heroku ->clicked open App-> My recipe page opens.
 
 
+[**(DAAT Recipe)Online-Recipe-Cookware App in Heroku.**](https://daat-recipe-cookware.herokuapp.com/)
 
+[**Github Repository.**](https://github.com/daat2/online-recipe-cookware)
 
-Deployment steps : Go into settings> github pages> master branch.
-The project is deployed in [Github pages](https://daat2.github.io/play-simongame/)
-
-Hosting: 
+**Local Deployment**
 
 ### Steps for a developer to run the project locally.
 
+Link sent to developer [**GitHub Link**](https://github.com/daat2/online-recipe-cookware).
 
-Link sent to developer [simongame](https://daat2.github.io/play-simongame/ ).
+- On the code tab,click the down arrow > Clone page displays list of clone methods.
 
-- Click on cloan or download highlighted in green.
+- Select Https and copy the URL.
 
-- Go to your location in your terminal.
+- Open Git Bash.
 
-- Do git clone and paste the link.
+- Change the working directory to location where you want the cloned directory.
 
-- This will clone the project on your computer.
-
-- Enter CD change directory (Name of project).
-
-- This will enable the developer to open the project within its computer in the editor.
+- Type ```git clone``` and paste the copied URL.(```https://github.com/daat2/online-recipe-cookware```)
+  
+- Press enter to create a local clone.
 
 
 # Credits
@@ -263,8 +261,8 @@ Link sent to developer [simongame](https://daat2.github.io/play-simongame/ ).
 |  [**Favicon   generator**](https://realfavicongenerator.net/)                                                                    	| Used to generate  Recipe logo   Favicon.                   	|
 |  [**Lakeland**]( https://www.lakeland.co.uk/   )                                                                                  	| Cookware tools.                                          	|
 |  [**Stackoverflow**](https://stackoverflow.com/questions/48975383/why-to-use-safe-in-jinja2-python)                             	| How to layout and dsiplay MongoDB     Contents in python.  	|
-|  [**Tables Generator**](https://www.tablesgenerator.com/)                                                                         | Table generator.     
-                                                            	
+|  [**Tables Generator**](https://www.tablesgenerator.com/)                                                                         | Markdown table generator.     
+|  [**GitHub Docs**](https://docs.github.com/en)                                                                                	| To get clone help.
 
 ## Media
 [**cloudinary**](https://cloudinary.com/)
