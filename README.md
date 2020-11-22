@@ -225,96 +225,33 @@ Link sent to developer [simongame](https://daat2.github.io/play-simongame/ ).
 ## Content
  I have endeavoured to write all my code by myslef but used the links and contents below for generating ideas and inspiration to make my the project responsive and creative.
 
-
-
-| Website Sources             	| Ideas Used                                  	|
-|-----------------------------	|---------------------------------------------	|
-|  [**Pixels**]( https://www.pexels.com/)   	| Contents for recipe ingredients and Methods 	|
-| [**Allrecipes**](https://www.allrecipes.com/)  	| Recipe page                                 	|
-|                             	|                                             	|
-			https://www.simplyrecipes.com/		
-		
-       https://www.epicurious.com/		
-					
-                    https://www.foodiesfeed.com/	
-                 			
-https://codepen.io/klesht/pen/pjjegK idea for reipe card	
-https://codepen.io/michmy/pen/GrzwVL Contents of recipe card
-
-https://htmlcolorcodes.com/tutorials/css-text-color/'
-https://flask.palletsprojects.com/en/1.1.x/api/#flask.Flask.route
-
- To creat my fonts https://fontawesome.bootstrapcheatsheets.com/#
-Favicon generator  https://realfavicongenerator.net/
-
-BBC food https://www.bbc.co.uk/food/recipes
-
-Lakeland: cookware tools https://www.lakeland.co.uk/	
-Recipe picture https://commons.wikimedia.org/wiki/File:Jollof_rice_and_Dodo.jpg						
-http://www.responsivegridsystem.com/calculator/				
-https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block						
-https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block						
-	Cloudinary.com							
-https://stackoverflow.com/questions/48975383/why-to-use-safe-in-jinja2-python							
-Code institte Data Centric Module.(Mini PROJECT-Task Managr ).https://courses.codeinstitute.net/
-
-https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents/33433098#introduction Used for mark down 
-* [ConvertingColors](https://convertingcolors.com/rgb-color-50_50_50.html?search=RGB(50,%2050,%2050)	
-
-* [Board Patterns](https://www.toptal.com/designers/subtlepatterns/thumbnail-view/page/3/)
-
-* [Ideas for Audio files](https://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library	)							
-											
-* [ideas for Audios](https://egonelbre.com/project/jsfx/)								
-								
-* [Research used for Simon game tutorial](https://github.com/beaucarnes/simon-game)							
-								
-* [Used  ideas to design Simon board](https://codepen.io/zentech/pen/XaYygR)								
-								
-* [Used for board Patterns](https://www.toptal.com/designers/subtlepatterns/?s=vintage)								
-								
-																	
-* [Used to get border radius properties](https://www.the-art-of-web.com/css/border-radius/)							
-																				
-* [Research on various css/javaScritp Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Border-radius_generator)								
-								
-* [Used for CSS ideas for styling](https://www.geeksforgeeks.org/how-to-apply-important-in-css/)	
-						
-* [Game Board Ideas](https://www.danpurdy.co.uk/tutorial/simon-says-game-in-jquery-tutorial/)								
-													
-* [Used to design board colors](https://www.cssmatic.com/box-shadow)								
-
-* [Markdown Tutorial](https://commonmark.org/help/)
-
-* [Markdown Research](https://en.wikipedia.org/wiki/Markdown)
-
-* [Rootech idea for game function help](https://www.youtube.com/watch?v=iXscqYgZ7HQ&list=PLCgJAO-QOmnxcbcgrx6mWcES5BxpoOVsg&index=26&t=0s)
-
-* [freeCodeCampvideo](https://www.youtube.com/watch?v=n_ec3eowFLQ&list=PLCgJAO-QOmnxcbcgrx6mWcES5BxpoOVsg&index=50)
-   
-* [Idea for the game controls](https://codepen.io/BenLBlood/pen/LGLEoJ?editors=1010) 
-
-* [used for my board switch](https://proto.io/freebies/onoff/)			
-
+                                                            	
+			
+|     Website Sources                                                                                                           	| Project Ideas                                           	|   	|   	|   	|
+|-------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------	|---	|---	|---	|
+|  [**SimplyRecipe**]( https://www.simplyrecipes.com/ )                                                                      	| Recipe   Ingredients, Methods and Description.          	|   	|   	|   	|
+| [**BBCFood**](https://www.bbc.co.uk/food/recipes)                                                                         	| Recipe Ingredients, Methods and   Description.(Cuisine) 	|   	|   	|   	|
+| [**Allrecipes**](https://www.allrecipes.com/)                                                                             	|     Recipe Ingredients,   Methods and Description.      	|   	|   	|   	|
+| [**Wiki**](https://commons.wikimedia.org/wiki/File:Jollof_rice_and_Dodo.jpg)                                                  	| Image for cuisine recipe                                	|   	|   	|   	|
+| [**Epicurious**]( https://www.epicurious.com/ )                                                                              	| Card  Design ideas.                                     	|   	|   	|   	|
+| [**Cloudinary**]( https://cloudinary.com/)                                                                                   	| Design and upload card image properties.               	|   	|   	|   	|
+| [**Codepen**](https://codepen.io/klesht/pen/pjjegK/)                                                                          	| Recipe Card Design.                                     	|   	|   	|   	|
+| [**Codepen**](https://codepen.io/michmy/pen/GrzwVL/)                                                                           	| Recipe card Contents.                                   	|   	|   	|   	|
+| [**Colorcodes**](https://htmlcolorcodes.com/tutorials/css-text-color/')                                                    	| Color Mix.                                              	|   	|   	|   	|
+| [**Code Institute Data Centric Module(Mini PROJECT-Task Manager)**](https://courses.codeinstitute.net/)                     	| Used for code resources and ideas.                      	|   	|   	|   	|
+| [**PalletProjects**](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Flask.route)                                    	| To gain more knowledge  on flask    route decorator.    	|   	|   	|   	|
+| [**Favicon generator**](https://realfavicongenerator.net/)                                                                   	| Used to generate  Recipe logo Favicon.                  	|   	|   	|   	|
+| [**Lakeland**]( https://www.lakeland.co.uk/ )                                                                                 	| Cookware tools.                                         	|   	|   	|   	|
+| [**Stackoverflow**](https://stackoverflow.com/questions/48975383/why-to-use-safe-in-jinja2-python)                            	| How to layout and dsiplay MongoDB   Contents in python. 	|   	|   	|   	|
 
     
 ## Media
- cloudinary :
- 
- The sounds for the board are copied from (https://freesound.org/)
- Sounds for each button : 
+[**cloudinary**](https://cloudinary.com/)
+* Used the resources to upload all card images.
 
- [blueSound](https://freesound.org/data/previews/151/151022_1838182-lq.mp3)
+ [**Favicon generator**](https://realfavicongenerator.net/) 
+   *   Generated the codes used for the faviocn logo icon.
 
- [yellowSound](https://freesound.org/data/previews/156/156859_2538033-lq.mp3)
-
- [greenSound](https://freesound.org/data/previews/171/171495_2437358-lq.mp3)
-
-[orangeSound](https://freesound.org/data/previews/191/191591_2437358-lq.mp3)
-
- [winSound](https://freesound.org/data/previews/151/151605_57789-lq.mp3)
-
- [clickSound](https://freesound.org/data/previews/522/522720_10058132-lq.mp3)
 
 ## Acknowledgements
 
@@ -325,3 +262,22 @@ https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-
 * To my Slack team mates for the time spared.
 * Ignatius Ukwuoma (Mentor).
  
+\begin{table}[]
+\begin{tabular}{lllll}
+Website Sources                                                                                               & Project Ideas                                           &  &  &  \\
+{[}**   SimplyRecipe**{]}( https://www.simplyrecipes.com/ )                                                   & Recipe Ingredients, Methods and   Description.          &  &  &  \\
+{[}**BBC   Food**{]}( https://www.bbc.co.uk/food/recipes)                                                     & Recipe Ingredients, Methods and   Description.(Cuisine) &  &  &  \\
+{[}**Allrecipes**{]}(https://www.allrecipes.com/)                                                             & Recipe Ingredients,   Methods and Description.          &  &  &  \\
+{[}**Wiki**{]}(https://commons.wikimedia.org/wiki/File:Jollof\_rice\_and\_Dodo.jpg)                           & Image for cuisine recipe                                &  &  &  \\
+{[}**Epicurious**{]}( https://www.epicurious.com/ )                                                           & Card  Design ideas.                                     &  &  &  \\
+{[}**Cloudinary**{]}( https://cloudinary.com/)                                                                & Design and uplaod  card image properties.               &  &  &  \\
+{[}**Codepen**{]}(https://codepen.io/klesht/pen/pjjegK/)                                                      & Recipe Card Design.                                     &  &  &  \\
+{[}**Codepen**{]}https://codepen.io/michmy/pen/GrzwVL/)                                                       & Recipe card Contents.                                   &  &  &  \\
+{[}**Colorcodes**{]}(https://htmlcolorcodes.com/tutorials/css-text-color/')                                   & Color Mix.                                              &  &  &  \\
+{[}**Code Institute   Data Centric Module(Mini PROJECT-Task Managr )**{]}(https://courses.codeinstitute.net/) & Used for code resources and ideas.                      &  &  &  \\
+{[}**   PalletProjects**{]}(https://flask.palletsprojects.com/en/1.1.x/api/\#flask.Flask.route)               & To gain more knowledge  on flask    route decorator.    &  &  &  \\
+{[}**Favicon generator**{]}( https://realfavicongenerator.net/)                                               & Used to generate  Recipe logo Favicon.                  &  &  &  \\
+{[}**Lakeland**{]}( https://www.lakeland.co.uk/ )                                                             & Cookware tools.                                         &  &  &  \\
+{[}**Stackoverflow**{]}(https://stackoverflow.com/questions/48975383/why-to-use-safe-in-jinja2-python)        & How to layout and dsiplay MongoDB   Contents in python. &  &  & 
+\end{tabular}
+\end{table}
