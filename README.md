@@ -203,39 +203,18 @@ Code is written in Gitpod and version controlled in GitHub.
 * Assumptions:
     * User has Heroku account.
     * Files added and commited to git using git commands.            
-  {| class="wikitable" 
-|- style="vertical-align:bottom;"
-! * Heroku Deployment Steps.
-|- style="vertical-align:bottom;"
-| * Assumptions:
-|-
-| * User has Heroku account.
-|-
-| * Files added and commited to git using git commands.
-|- style="vertical-align:bottom;"
-| 1. Created Heroku App with the   App name.
-|-
-| 2. Linked my  local   Git repository to Heroku.
-|-
-| 3.Created a requirements.txt file, which contains a list   of our dependencies.
-|- style="vertical-align:middle;"
-| ```sudo pip3 freeze --local   > requirements.txt```
-|-
-| 4. Added   a   Procfile - Created a Procfile, by typing
-|- style="vertical-align:middle;"
-| ```  echo web: python run.py > Procfile``` (   It tells Heroku how to run our project.)
-|- style="vertical-align:middle;"
-| 5.Ran git commit  Procfile for deployment.
-|- style="vertical-align:middle;"
-| 6.Added a web process ```   heroku ps:scale web=1```  (Command   prompt to keep our code running in Heroku)
-|- style="vertical-align:middle;"
-| 7.Set the IP, PORT and  Environmental  variables -> Clicked setting to display   the config  Vars .
-|- style="vertical-align:middle;"
-| 8. Ran  ``git push    -u heroku  master```   to associate Heroku to our master branch.
-|- style="vertical-align:middle;"
-| 9. Back to Heroku ->clicked   open App-> My recipe page opens.
-|}          
-
+ 
+1. Created Heroku App with the App name.
+2. Linked my  local Git repository to Heroku.
+3. Created a requirements.txt file, which contains a list of our dependencies. 
+```sudo pip3 freeze --local > requirements.txt```
+4. Added   a Procfile - Created a Procfile, by typing 
+```  echo web: python run.py > Procfile``` ( It tells Heroku how to run our project.)
+5. Ran git commit  Procfile for deployment. 
+6. Added a web process ``` heroku ps:scale web=1```  (Command prompt to keep our code running in Heroku)
+7. Set the IP, PORT and  Environmental  variables -> Clicked setting to display the config  Vars .
+8. Ran  ```git push  -u heroku  master```   to associate Heroku to our master branch.
+9. Back to Heroku ->clicked open App-> My recipe page opens.
 
 
 
