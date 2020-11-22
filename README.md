@@ -19,6 +19,7 @@
     * [**Content** ](#Content)
     * [ **Media**](#Media)
  * [**Acknowledgements** ](#Acknowledgements)
+ * [**Disclaimer Warning**](#Disclaimer-Warning)
 
 ---
 ## Project Concept
@@ -195,7 +196,49 @@ Automated testing would have been done, but my mentor said is not needed for my 
  
 ## Deployment
 ------------------------
-Deployment process followed to deploy to Github Pages :
+The working project have been deployed to Heroku server as a running application.
+Code is written in Gitpod and version controlled in GitHub.
+
+* Heroku Deployment Steps:
+* Assumptions:
+    * User has Heroku account.
+    * Files added and commited to git using git commands.            
+  {| class="wikitable" 
+|- style="vertical-align:bottom;"
+! * Heroku Deployment Steps.
+|- style="vertical-align:bottom;"
+| * Assumptions:
+|-
+| * User has Heroku account.
+|-
+| * Files added and commited to git using git commands.
+|- style="vertical-align:bottom;"
+| 1. Created Heroku App with the   App name.
+|-
+| 2. Linked my  local   Git repository to Heroku.
+|-
+| 3.Created a requirements.txt file, which contains a list   of our dependencies.
+|- style="vertical-align:middle;"
+| ```sudo pip3 freeze --local   > requirements.txt```
+|-
+| 4. Added   a   Procfile - Created a Procfile, by typing
+|- style="vertical-align:middle;"
+| ```  echo web: python run.py > Procfile``` (   It tells Heroku how to run our project.)
+|- style="vertical-align:middle;"
+| 5.Ran git commit  Procfile for deployment.
+|- style="vertical-align:middle;"
+| 6.Added a web process ```   heroku ps:scale web=1```  (Command   prompt to keep our code running in Heroku)
+|- style="vertical-align:middle;"
+| 7.Set the IP, PORT and  Environmental  variables -> Clicked setting to display   the config  Vars .
+|- style="vertical-align:middle;"
+| 8. Ran  ``git push    -u heroku  master```   to associate Heroku to our master branch.
+|- style="vertical-align:middle;"
+| 9. Back to Heroku ->clicked   open App-> My recipe page opens.
+|}          
+
+
+
+
 
 Deployment steps : Go into settings> github pages> master branch.
 The project is deployed in [Github pages](https://daat2.github.io/play-simongame/)
@@ -241,7 +284,7 @@ Link sent to developer [simongame](https://daat2.github.io/play-simongame/ ).
 |  [**Favicon   generator**](https://realfavicongenerator.net/)                                                                    	| Used to generate  Recipe logo   Favicon.                   	|
 |  [**Lakeland**]( https://www.lakeland.co.uk/   )                                                                                  	| Cookware tools.                                          	|
 |  [**Stackoverflow**](https://stackoverflow.com/questions/48975383/why-to-use-safe-in-jinja2-python)                             	| How to layout and dsiplay MongoDB     Contents in python.  	|
-
+|  [**Tables Generator**](https://www.tablesgenerator.com/)                                                                         | Table generator.     
                                                             	
 
 ## Media
@@ -251,13 +294,19 @@ Link sent to developer [simongame](https://daat2.github.io/play-simongame/ ).
  [**Favicon generator**](https://realfavicongenerator.net/) 
    *   Generated the codes used for the faviocn logo icon.
 
+* [**Codeinstitute**](https://codeinstitute.net/5-day-coding-challenge/?utm_term=code%20institute&utm_campaign=a%2526c_BR_IRL_Code_Institute&utm_source=adwords&utm_medium=ppc&hsa_net=adwords&hsa_tgt=kwd-319867646331&hsa_ad=417883010337&hsa_acc=8983321581&hsa_grp=62188641240&hsa_mt=e&hsa_cam=1578649861&hsa_kw=code%20institute&hsa_ver=3&hsa_src=g&gclid=Cj0KCQiAkuP9BRCkARIsAKGLE8UKGkHlbFcn5QITztlwWRaPBWLYQS9C51AIyuOS174_XD_nATSEj70aAnN7EALw_wcB&gclsrc=aw.ds)
+    * Used some of the source code from task manager mini project.    
+
 
 ## Acknowledgements
 
  I received inspirations for this project from : 
-* Code Institute.
-* My appreciation for support to Ann Greaves( CI Tutor Support).			
-* Neil Kavanagh for his words of strenghth in me, "his words: I believe you can do it" (CI Student care adviser team)			
-* To my Slack team mates for the time spared.
+* Code Institute project ideas.
+* Code Institute Student support team for assistant in troubleshooting. 		
+* To my Slack team mates.
 * Ignatius Ukwuoma (Mentor).
+
+
+## Disclaimer Warning
  
+  The materials and sources used for this project are intended for Academic purposes only. 
