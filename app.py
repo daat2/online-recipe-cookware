@@ -179,8 +179,6 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
-""" To see the cuisine category ,log in as adminn for username and password. """
-
 
 @app.route("/add_cuisine_category", methods=["GET", "POST"])
 def add_cuisine_category():
