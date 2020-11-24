@@ -85,8 +85,7 @@
         {% endfor %}
     </div>
 </div>
-   
- 
+    
 <div class="dropdown ">
   <button class="btn btn deep-orange darken-2 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
     aria-haspopup="true" aria-expanded="false">CUISINE</button>
@@ -95,7 +94,6 @@
             <a class="dropdown-item" href="{{ url_for('get_recipes_by_cuisine',cuisine=cuisine['cuisine_name']) }}">{{cuisine.cuisine_name}}</a>
         {% endfor %}
   </div>
-</div>
 </div>
  </nav>
 
@@ -118,7 +116,6 @@
         {% endif %}
   </ul>
           
-
 <section>
   <!--- Flash messages -->
 {% with messages = get_flashed_messages() %}
@@ -139,19 +136,7 @@
     </main>
 
 
-<!-- card panels-->
-
-
-
-
-
-
-
-
-
-
 <!--footer section-->
-
 
 <footer class="page-footer font-small unique-color-dark">
 
@@ -171,7 +156,7 @@
  <i class="fab fa-facebook-f pr-1"></i>
   <span>Facebook</span>
 </button>
-  </a>
+</a>
 
 <!--Twitter-->
 <a target="_blank" href="https://twitter.com/home ">
@@ -210,7 +195,6 @@
 
 
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
   integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <!-- Bootstrap tooltips -->
@@ -224,7 +208,6 @@
 {% block scripts %}
 {% endblock %}
 </body>
-
 
 
 </html>

@@ -43,7 +43,6 @@ def get_recipes_by_cuisine(cuisine):
     return render_template("recipes.html", cuisines=cuisines, categories=categories, recipes=recipes)
 
 
-
 @app.route("/recipe/<recipe_id>")
 def get_recipe_detail(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
@@ -103,7 +102,6 @@ def register():
 
     return render_template("register.html")
 
-
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -144,7 +142,6 @@ def profile(username):
 
     return redirect(url_for("login"))
 
-
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
     if request.method == "POST":
@@ -183,6 +180,7 @@ def logout():
     return redirect(url_for("login"))
 
 """ To see the cuisine category ,log in as adminn for username and password. """
+
 
 @app.route("/add_cuisine_category", methods=["GET", "POST"])
 def add_cuisine_category():

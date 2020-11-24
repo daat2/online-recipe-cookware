@@ -1,34 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section>
-  
-        <!-- flash messages -->
-     {% with messages = get_flashed_messages(category_filter=['success']) %}
-             {% if messages %}
-                {%for message in messages%}
-                   <div class="alert alert-success alert-dismissible mb-3" role="alert">
-                        <span>{{message}}</span>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                   </div>
-                {% endfor%}
-              {% endif %}
-         {% endwith %}
-         {% with messages = get_flashed_messages(category_filter=['error']) %}
-             {% if messages %}
-                {%for messages in messages%}
-                   <div class="alert alert-danger alert-dismissible mb-3" role="alert">
-                        <span>{{message}}</span>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                   </div>
-                {% endfor%}
-              {% endif %}
-         {% endwith %}
-    </section>
 
 <!-- card panels-->
     
@@ -51,7 +23,7 @@
         <li><span class="icon icon-users"> {{ recipe.servings }}</span>&nbspservings<span></li>
         <li><span class="icon icon-clock">{{ recipe.cook_time }}</span><span></li>
         </ul>	   
-        </div> 
+    </div> 
 
          <p> {{ recipe.recipe_description }}</p>
          
@@ -66,38 +38,11 @@
 {% endfor %}
 
             
+          
+          
 
-
-             
-               
-
-<!-- <hr class = "new"> -->
-
-
-
-
-
-
-
-
-
-
-
-
-   
-     <!-- {% for recipe in recipes %}<br>
-        {{ recipe.category_name }}<br>
-        {{ recipe.recipe_name }}<br>
-        {{ recipe.cook_time}}<br>
-        {{ recipe.prep_time }}<br>
-    {% endfor %}
-    
-    {% for cuisine in cuisines %}
-        {{ cuisine.cuisine_name }}
-    {% endfor %} -->
 
 
 
 
 {% endblock %}     
-
