@@ -39,7 +39,7 @@ the speed it offers in creating webpages using  the philosophy of “DRY”:  Do
 
 
  ## UX 
-This project was developed with the User focus mind so that users can see how the system functioanlity works 
+This project was developed with the User focus mind so that users can see how the system functionality works 
 especially where they can add recipe and view the recipe added when logged into their profile.
 
 
@@ -84,8 +84,8 @@ Click on the link to open the Wireframe.[**Wireframe DAAT Recipe**](https://gith
 DAAT Recipe :Online-recipe-cookware
 
  * Site Logo-I designed site logo as part of UX design so users can identify the brand as a recipe webpage.
- * Favicons- I created a favicon for my site, it is little icons displayed on the browser tab and bookmarks bar as an identity of my site so users can recognise the website..
- * Navbar- The Navbar comprises of all the navigation links which users will use to navigate through all the pages of the website
+ * Favicons- I created a favicon for my site, it is little icons displayed on the browser tab and bookmarks bar as an identity of my site so users can recognise the website.
+ * Navbar- The Navbar comprises of all the navigation links which users will use to navigate through all the pages of the website.
  * Secondary Navbar-  The secondary Navbar is a distinct Nav, user friendly easy access for users  to navigate through the Course meal and Cuisines of their choice.
  * Login- Users will be able to login with their personal login details  and these details will match the authentication criteria.   
  * Registration- On the landing page, a user’s will be able to click the login tab, if not registered, they will be able to complete the form and complete their details.
@@ -189,6 +189,7 @@ See attached link for detailed manual testing preocess and defects report.
 
 
 [Manual Testing](https://github.com/daat2/online-recipe-cookware/blob/master/static/testing/Daat%20Recipe%20Testing.pdf)
+
 [Defect Report](https://github.com/daat2/online-recipe-cookware/blob/master/static/testing/Defect%20Reports.pdf)
 
 * The project was tested on the different devices [IOS,Android, desktop and Laptop].
