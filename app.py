@@ -55,7 +55,6 @@ def search():
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
-    
 
 @app.route("/add_recipes", methods=["GET", "POST"])
 def add_recipes():
@@ -69,7 +68,7 @@ def add_recipes():
             "methods": request.form.get("methods"),
             "created_by": session["user"]
         }
-        
+
         mongo.db.recipes.insert_one(recipe)
         flash("New Recipe Added")
         return redirect(url_for("home"))
@@ -183,6 +182,7 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
+""" To see the cuisine category ,log in as adminn for username and password. """
 
 @app.route("/add_cuisine_category", methods=["GET", "POST"])
 def add_cuisine_category():
@@ -200,15 +200,13 @@ def add_cuisine_category():
 @app.route("/cookware")
 def cookware():
     return render_template("cookware.html")     
-    
+
 
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Deleted")
     return redirect(url_for("add_recipes"))
-    
-
 
 
 if __name__ == "__main__":
