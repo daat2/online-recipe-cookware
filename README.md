@@ -50,23 +50,23 @@ especially where they can add recipe and view the recipe added when logged into 
 **User Story (Persona: Barbara works as self employed as a cook.)**
 
 1.	As a cook, 
-I should be able to create a profile, add my recipe to the page and send the link fans to check out my recipe.
+I should be able to create a profile, add my recipe to the page.
     
-*Acceptance criteria*:Barbara should be able to click on the new recipe and add new recipe to the page and send link to fans page. 
+*Acceptance criteria*:Barbara should be able to click on the new recipe and add new recipe to the page. 
 
-**User Story (Persona: Rose is a grocery shopper she needs to prepare her favourite menu and to get the ingredients from the store.)**
+**User Story (Persona: Rose is a grocery shopper she needs to prepare her favourite menu and to get the ingredients from the store and search for cooking tool.)**
    
 2. As a grocery shopper,
-I should be able to browse for my favourite recipe and click on the link to get the list of ingredients to be purchased in the next shopping.
+I should be able to browse for my favourite recipe,click on the link to get the list of ingredients to be purchased and browse through the cookware tools.
 
 *Acceptance Criteria*:: Rose should be able to get list of ingredients from her selected favourite recipe and get the list of ingredients.   
  
-**User Story (Persona: General users, they can browse all recipes and select any method to use for their cooking.)**
+**User Story (Persona: General users, they can browse all the navigation links recipes and select any method to use for their cooking.)**
 
 3.	As a general user,
-I should be able to browse all the recipes and view the recipe ingredients and methods of my choice.
+I should be able to browse all the recipes, view the recipe ingredients and methods of choice.
 
- *Acceptance Criteria*: General users should be able to browse all the recipes. view ingredients and methods of any recipe of their choice . 
+ *Acceptance Criteria*: General users should be able to browse all the recipes,view ingredients and methods of any recipe of their choice . 
 
  
 ### Wireframes
@@ -175,10 +175,18 @@ If I was privileged and also something I will also implement as part of my work 
 * [**Markdown** ](https://guides.github.com/features/mastering-markdown/)
     * I have used this website to learn how to write my README Documentation.
 
+
 ## Testing
 -----------------------------
-See attached link for detailed manual testing.\
-Automated testing would have been done, but my mentor said is not needed for my code.
+
+Testing is carried out to verify the responsiveness of the site for end-users.
+The test is based on functional requirements.
+
+*Caution* :This test does not verify that webpage has a zero defects but can show it has defects and might not be find all defects.
+as exhaustive testing is impossible.
+
+See attached link for detailed manual testing preocess and defects logs.
+
 
 [Manual Testing](https://github.com/daat2/play-simongame/blob/master/assets/images/manualTest-simon.pdf)
 
@@ -186,13 +194,16 @@ Automated testing would have been done, but my mentor said is not needed for my 
 
 * The test was conducted across two browsers- Firefox and Google Chrome. 
 
+* Used inbuilt lighthouse in google DevTools to audit  web app. 
+
 * Operating System used for testing : Windows 8 and Windows 10.
 
-* I carried out User Acceptance test by sending link to friends to test the basic game functioanlity and feedback received.
+* I carried out User Acceptance test by sending link to friends to test the navigation links and basic functionality.
 
 * The part of the requirements for the test is based on the user stories in the UX header.
 
-* The objective of the test is for players to be able to interact with the game.
+
+
  
 ## Deployment
 ------------------------
@@ -261,8 +272,9 @@ Link sent to developer [**GitHub Link**](https://github.com/daat2/online-recipe-
 |  [**Favicon   generator**](https://realfavicongenerator.net/)                                                                    	| Used to generate  Recipe logo   Favicon.                   	|
 |  [**Lakeland**]( https://www.lakeland.co.uk/   )                                                                                  	| Cookware tools.                                          	|
 |  [**Stackoverflow**](https://stackoverflow.com/questions/48975383/why-to-use-safe-in-jinja2-python)                             	| How to layout and dsiplay MongoDB     Contents in python.  	|
-|  [**Tables Generator**](https://www.tablesgenerator.com/)                                                                         | Markdown table generator.     
-|  [**GitHub Docs**](https://docs.github.com/en)                                                                                	| To get clone help.
+|  [**Tables Generator**](https://www.tablesgenerator.com/)                                                                         | Table generator.     
+|  [**GitHub Docs**](https://docs.github.com/en)                                                                                	| Research on git documentation.
+
 
 ## Media
 [**cloudinary**](https://cloudinary.com/)
@@ -277,7 +289,7 @@ Link sent to developer [**GitHub Link**](https://github.com/daat2/online-recipe-
 
 ## Acknowledgements
 
- I received inspirations for this project from : 
+ I Acknowledged the support of  : 
 * Code Institute project ideas.
 * Code Institute Student support team for assistant in troubleshooting. 		
 * To my Slack team mates.
