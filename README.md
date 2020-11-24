@@ -185,10 +185,11 @@ The test is based on functional requirements.
 *Caution* :This test does not verify that webpage has a zero defects but can show it has defects and might not be find all defects.
 as exhaustive testing is impossible.
 
-See attached link for detailed manual testing preocess and defects logs.
+See attached link for detailed manual testing preocess and defects report.
 
 
-[Manual Testing](https://github.com/daat2/play-simongame/blob/master/assets/images/manualTest-simon.pdf)
+[Manual Testing](https://github.com/daat2/online-recipe-cookware/blob/master/static/testing/Daat%20Recipe%20Testing.pdf)
+[Defect Report](https://github.com/daat2/online-recipe-cookware/blob/master/static/testing/Defect%20Reports.pdf)
 
 * The project was tested on the different devices [IOS,Android, desktop and Laptop].
 
